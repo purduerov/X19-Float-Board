@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "ROV_Footprints")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_parts.pretty")(options "")(descr "Purdue ROV Central Footprints"))
+)

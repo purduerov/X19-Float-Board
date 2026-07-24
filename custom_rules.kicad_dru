@@ -1,0 +1,6 @@
+# Custom DRC Rules for Purdue ROV Boards
+# These rules enforce isolation boundaries between high-power systems and low-voltage logic.
+
+(rule "High_Voltage_Isolation"
+   (constraint clearance (min 2.0mm))
+   (condition "A.NetClass == 'Power_Thruster' && B.NetClass == 'Logic_3V3'"))

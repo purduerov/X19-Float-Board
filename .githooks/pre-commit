@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Pre-commit hook to verify that KiCad volatile metadata clean filters are configured and active.
+# Auto-heals by running the setup script and re-staging files if missing.
+
+SCH_CLEAN=$(git config --get filter.kicad_sch_cleaner.clean || true)
+
+if [ -z "$SCH_CLEAN" ]; then
+    echo "⚠️  WARNING: KiCad Git clean filters are not configured on this machine!"
+    echo "Running automatic filter configuration..."
+    
+    # Determine the script path
+    SCRIPT_DIR="$(dirname "$0")"
+    REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+    
+    if [ -f "$REPO_ROOT/setup_git_filters.sh" ]; then
+        bash "$REPO_ROOT/setup_git_filters.sh"
+    elif [ -f "$REPO_ROOT/setup_git_filters.ps1" ]; then
+        powershell.exe -File "$REPO_ROOT/setup_git_filters.ps1"
+    fi
+    
+    echo "Configured filters! Re-staging files to apply the cleaning..."
+    # Re-stage any staged KiCad files to trigger the newly configured clean filters
+    # xargs -r is a GNU extension, use a portable alternative or check if there are files
+    STAGED_FILES=$(git diff --cached --name-only | grep -E '\.(kicad_sch|kicad_pcb|kicad_pro)$' || true)
+    if [ -n "$STAGED_FILES" ]; then
+        echo "$STAGED_FILES" | xargs git add
+    fi
+    echo "Re-staging complete."
+fi
