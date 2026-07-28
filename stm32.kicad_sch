@@ -1973,20 +1973,26 @@
 		)
 	)
 	(junction
-		(at 55.88 29.21)
+		(at 46.99 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c56bb89-7190-4c0d-ba51-3e9b4e23f444")
+	)
+	(junction
+		(at 44.45 19.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4373cea7-2970-400f-9da6-9e371a26b651")
 	)
 	(junction
-		(at 53.34 129.54)
+		(at 41.91 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f969578-b0ac-447a-b05b-269d0dcb65f0")
 	)
 	(wire
 		(pts
-			(xy 55.88 29.21) (xy 55.88 33.02)
+			(xy 44.45 19.05) (xy 44.45 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1996,7 +2002,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 29.21) (xy 59.69 29.21)
+			(xy 46.99 19.05) (xy 48.26 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c031503-9605-4703-9880-868db4f43950")
+	)
+	(wire
+		(pts
+			(xy 44.45 19.05) (xy 46.99 19.05)
 		)
 		(stroke
 			(width 0)
@@ -2006,7 +2022,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 29.21) (xy 58.42 33.02)
+			(xy 46.99 19.05) (xy 46.99 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2016,7 +2032,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 129.54) (xy 53.34 129.54)
+			(xy 39.37 119.38) (xy 41.91 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2026,7 +2042,7 @@
 	)
 	(global_label "3.3V"
 		(shape input)
-		(at 33.02 40.64 180)
+		(at 21.59 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2036,7 +2052,7 @@
 		)
 		(uuid "b32ebd64-cd5e-4ed7-a402-613adda561eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.9224 40.64 0)
+			(at 14.4924 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2050,7 +2066,7 @@
 	)
 	(global_label "3.3 V"
 		(shape input)
-		(at 59.69 29.21 0)
+		(at 48.26 19.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2060,7 +2076,7 @@
 		)
 		(uuid "e9b17f40-2d1a-44bb-86fe-e03cc289d983")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.7552 29.21 0)
+			(at 56.3252 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2074,7 +2090,7 @@
 	)
 	(hierarchical_label "RF INT"
 		(shape output)
-		(at 68.58 86.36 0)
+		(at 57.15 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2085,7 +2101,7 @@
 	)
 	(hierarchical_label "Motor PWM"
 		(shape output)
-		(at 68.58 66.04 0)
+		(at 57.15 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2096,7 +2112,7 @@
 	)
 	(hierarchical_label "Depth SCL"
 		(shape bidirectional)
-		(at 68.58 104.14 0)
+		(at 57.15 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2107,7 +2123,7 @@
 	)
 	(hierarchical_label "RF RST"
 		(shape output)
-		(at 68.58 83.82 0)
+		(at 57.15 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2118,7 +2134,7 @@
 	)
 	(hierarchical_label "Switch"
 		(shape input)
-		(at 33.02 63.5 180)
+		(at 21.59 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2129,7 +2145,7 @@
 	)
 	(hierarchical_label "RF MISO"
 		(shape input)
-		(at 68.58 55.88 0)
+		(at 57.15 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2140,7 +2156,7 @@
 	)
 	(hierarchical_label "Depth SDA"
 		(shape bidirectional)
-		(at 68.58 106.68 0)
+		(at 57.15 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2151,7 +2167,7 @@
 	)
 	(hierarchical_label "RF SCK"
 		(shape output)
-		(at 68.58 53.34 0)
+		(at 57.15 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2162,7 +2178,7 @@
 	)
 	(hierarchical_label "RF NSS"
 		(shape output)
-		(at 68.58 50.8 0)
+		(at 57.15 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2173,7 +2189,7 @@
 	)
 	(hierarchical_label "RF MOSI"
 		(shape output)
-		(at 68.58 58.42 0)
+		(at 57.15 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2184,7 +2200,7 @@
 	)
 	(symbol
 		(lib_id "MCU_ST_STM32G4:STM32G431RBIx")
-		(at 50.8 81.28 0)
+		(at 39.37 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2195,7 +2211,7 @@
 		(fields_autoplaced yes)
 		(uuid "569838ca-3aba-40f3-b3e7-e7f191854d40")
 		(property "Reference" "U6"
-			(at 55.4833 129.54 0)
+			(at 44.0533 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2206,7 +2222,7 @@
 			)
 		)
 		(property "Value" "STM32G431RBIx"
-			(at 55.4833 132.08 0)
+			(at 44.0533 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2217,7 +2233,7 @@
 			)
 		)
 		(property "Footprint" "Package_BGA:UFBGA-64_5x5mm_Layout8x8_P0.5mm"
-			(at 35.56 127 0)
+			(at 24.13 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2229,7 +2245,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g431rb.pdf"
-			(at 50.8 81.28 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2240,7 +2256,7 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 32KB RAM, 170 MHz, 1.71-3.6V, 52 GPIO, UFBGA64"
-			(at 50.8 81.28 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2453,7 +2469,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 53.34 29.21 270)
+		(at 41.91 19.05 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2464,7 +2480,7 @@
 		(fields_autoplaced yes)
 		(uuid "a00d4955-c756-43a3-ada5-e219f664ac36")
 		(property "Reference" "C13"
-			(at 53.3336 22.86 90)
+			(at 41.9036 12.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2474,7 +2490,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 53.3336 25.4 90)
+			(at 41.9036 15.24 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2484,7 +2500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 29.21 0)
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2495,7 +2511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 29.21 0)
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2522,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 53.34 29.21 0)
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2533,7 +2549,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 129.54 0)
+		(at 41.91 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2544,7 +2560,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6831bce-a0c8-4e5d-af36-a77e01cd441f")
 		(property "Reference" "#PWR023"
-			(at 53.34 135.89 0)
+			(at 41.91 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2555,7 +2571,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 134.62 0)
+			(at 41.91 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2565,7 +2581,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 129.54 0)
+			(at 41.91 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2576,7 +2592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 129.54 0)
+			(at 41.91 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2587,7 +2603,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 129.54 0)
+			(at 41.91 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2611,7 +2627,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 29.21 270)
+		(at 39.37 19.05 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2622,7 +2638,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1f9b952-3ac8-45d3-9cfe-1812abef3384")
 		(property "Reference" "#PWR022"
-			(at 44.45 29.21 0)
+			(at 33.02 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2633,7 +2649,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 29.2099 90)
+			(at 35.56 19.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2644,7 +2660,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 29.21 0)
+			(at 39.37 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2655,7 +2671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 29.21 0)
+			(at 39.37 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,7 +2682,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 29.21 0)
+			(at 39.37 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

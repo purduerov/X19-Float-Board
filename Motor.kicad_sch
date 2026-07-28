@@ -1127,6 +1127,12 @@
 		(uuid "6253d13e-86fd-48cc-8ff4-d504de98d2c8")
 	)
 	(junction
+		(at 27.94 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5808959-7e88-44d0-8770-40a41addb85c")
+	)
+	(junction
 		(at 40.64 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1184,6 +1190,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 46.99) (xy 27.94 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8140def9-2661-430b-83ea-822e73e5eb98")
+	)
+	(wire
+		(pts
 			(xy 40.64 35.56) (xy 40.64 38.1)
 		)
 		(stroke
@@ -1238,7 +1254,7 @@
 	)
 	(hierarchical_label "Motor PWM"
 		(shape input)
-		(at 27.94 46.99 180)
+		(at 26.67 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
