@@ -91,5 +91,16 @@
 			(outputdirectory "")
 		)
 	)
+	(gr_circle
+		(center 150 100)
+		(end 200 100)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "72773beb-30b3-469c-ba37-dc8e835d22d3")
+	)
 	(embedded_fonts no)
 )

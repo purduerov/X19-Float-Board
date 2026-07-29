@@ -1,3 +1,0 @@
-*.kicad_sch filter=kicad_sch_cleaner
-*.kicad_pcb filter=kicad_pcb_cleaner
-*.kicad_pro filter=kicad_project_cleaner
