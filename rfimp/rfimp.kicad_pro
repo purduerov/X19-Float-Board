@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.0,
+          "height": 1.778,
+          "width": 1.778
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -473,7 +473,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "X19-Float-Board.kicad_pro",
+    "filename": "rfimp.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -514,10 +514,6 @@
       "vrml": ""
     },
     "page_layout_descr_file": ""
-  },
-  "project": {
-    "company": "Purdue ROV",
-    "title": "Purdue ROV Subsystem Board"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -625,49 +621,25 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "empty.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "X19-Float-Board.kicad_sch",
-        "name": "X19-Float-Board",
-        "uuid": "00000000-0000-0000-0000-000060e6118b"
+        "filename": "rfimp.kicad_sch",
+        "name": "Adafruit RFM+LoRa Breakout_1",
+        "uuid": "b141a29b-020a-4b04-857d-9968359c9a51"
       }
     ],
-    "used_designators": "X1,U1,U5,U7,R7-9,R11-12,JP1-3,FID1-2,C17-19,J2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
-      "00000000-0000-0000-0000-000060e6118b",
-      "X19-Float-Board"
-    ],
-    [
-      "b8b01d55-3cf7-40b0-9951-5ecee40f8aa9",
-      "stm32"
-    ],
-    [
-      "c07ea2df-4373-423b-99f3-52af8b77a578",
-      "rf"
-    ],
-    [
-      "9d43548c-72e6-48dc-8947-3d07e1d2f4c8",
-      "Motor"
-    ],
-    [
-      "5f356ab3-657b-42f3-9a8b-ebc79580ebf5",
-      "sensor"
-    ],
-    [
-      "0ac88440-db6d-4d31-a4a6-0df1c7290ceb",
-      "Switch"
-    ],
-    [
-      "dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c",
-      "PWR"
+      "b141a29b-020a-4b04-857d-9968359c9a51",
+      "Adafruit RFM+LoRa Breakout_1"
     ]
   ],
   "text_variables": {},
