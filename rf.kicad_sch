@@ -842,7 +842,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 39.37 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -1081,7 +1081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "customrf:rf module"
 			(at -41.91 3.81 0)
 			(hide yes)
 			(show_name no)
