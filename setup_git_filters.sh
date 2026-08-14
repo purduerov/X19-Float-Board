@@ -1,27 +1,11 @@
 #!/usr/bin/env bash
-# Sets up advanced Git clean/smudge filters for KiCad project files on the local machine.
+set -e
 
-echo "Configuring local Git clean/smudge filters for KiCad..."
+CACHE_DIR=".pcb-devops-cache"
 
-# 1. Schematic Cleaner
-git config filter.kicad_sch_cleaner.clean "sed -E -e 's/\(zoom [0-9.]+\)/\(zoom 1.0\)/g' -e 's/\(scroll -?[0-9.]+ -?[0-9.]+\)/\(scroll 0 0\)/g'"
-git config filter.kicad_sch_cleaner.smudge "cat"
+if [ ! -d "$CACHE_DIR" ]; then
+    echo "Fetching central pcb-devops tooling..."
+    git clone --depth 1 https://github.com/purduerov/pcb-devops.git "$CACHE_DIR"
+fi
 
-# 2. PCB Layout Cleaner
-git config filter.kicad_pcb_cleaner.clean "sed -E -e 's/\(viewport -?[0-9.]+ -?[0-9.]+ [0-9.]+ [0-9.]+\)/\(viewport 0 0 1 1\)/g'"
-git config filter.kicad_pcb_cleaner.smudge "cat"
-
-# 3. Project Cleaner
-git config filter.kicad_project_cleaner.clean "sed -E -e 's/^update=.*$/update=Date/g'"
-git config filter.kicad_project_cleaner.smudge "cat"
-
-# 4. Git Hooks Configuration
-git config core.hooksPath .githooks
-echo "Git hooks path configured to .githooks"
-
-# 5. Automatic Submodule Updates Configuration
-git config submodule.recurse true
-git config checkout.recurse true
-echo "Git configured to automatically pull and update submodules recursively."
-
-echo "Git filters, hooks, and submodules configured successfully!"
+bash "$CACHE_DIR/scripts/setup_git_filters.sh"

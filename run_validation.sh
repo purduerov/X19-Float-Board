@@ -1,31 +1,19 @@
 #!/usr/bin/env bash
-# Runs local KiBot validation and fabrication package generation using Docker.
-
 set -e
 
-# Ensure Git clean filters are configured
-SCH_CLEAN=$(git config --get filter.kicad_sch_cleaner.clean || true)
-if [ -z "$SCH_CLEAN" ]; then
-    echo "KiCad Git clean filters are not configured. Running setup_git_filters.sh..."
-    bash ./setup_git_filters.sh
+# Delegate hardware validation to central pcb-devops repository
+CACHE_DIR=".pcb-devops-cache"
+
+if [ ! -d "$CACHE_DIR" ]; then
+    echo "Fetching central pcb-devops tooling..."
+    git clone --depth 1 https://github.com/purduerov/pcb-devops.git "$CACHE_DIR"
+else
+    echo "Updating central pcb-devops tooling..."
+    git -C "$CACHE_DIR" pull origin master --quiet
 fi
 
-# Verify docker is installed
-if ! command -v docker &> /dev/null; then
-    echo "Error: docker is not installed. Please install Docker to run local validation."
-    exit 1
+if [ -d "libs" ]; then
+    find libs -name "*.kicad_sym" -exec python3 "$CACHE_DIR/scripts/linter_validator.py" {} +
+else
+    echo "No local symbol libraries found in libs/."
 fi
-
-PROJECT_DIR=$(pwd)
-KIBOT_CONFIG="libs/pcb-devops/kibot_master.yaml"
-
-if [ ! -f "$KIBOT_CONFIG" ]; then
-    echo "Local master config not found in submodules. Fetching latest from GitHub..."
-    curl -sSL https://raw.githubusercontent.com/purduerov/pcb-devops/master/kibot_master.yaml -o local_kibot.yaml
-    KIBOT_CONFIG="local_kibot.yaml"
-fi
-
-echo "Starting KiBot Local Validation..."
-docker run --rm -v "${PROJECT_DIR}:/workspace" -w /workspace setsoft/kibot:latest kibot -c "$KIBOT_CONFIG" -s all -d Generated_Outputs
-
-echo "Validation completed successfully! Outputs are in the 'Generated_Outputs' directory."
