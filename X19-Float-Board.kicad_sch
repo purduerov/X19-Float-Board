@@ -282,12 +282,6 @@
 		)
 	)
 	(junction
-		(at 64.77 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "296b9985-37ed-4c6e-8c6e-a7edeb0a0665")
-	)
-	(junction
 		(at 54.61 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -304,12 +298,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c040a2a-ffd6-49da-8ca1-d48b0d15cf52")
-	)
-	(junction
-		(at 54.61 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7580e00-e24b-4f68-8e19-9bb5a0fe6605")
 	)
 	(wire
 		(pts
@@ -333,16 +321,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 27.94) (xy 54.61 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fbe39fc-00eb-43d0-aff8-fac28ad6a56e")
-	)
-	(wire
-		(pts
 			(xy 54.61 19.05) (xy 57.15 19.05)
 		)
 		(stroke
@@ -350,16 +328,6 @@
 			(type default)
 		)
 		(uuid "13446478-60b3-4c57-85a3-695bcc681c70")
-	)
-	(wire
-		(pts
-			(xy 54.61 34.29) (xy 64.77 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "192cf16b-7891-4753-9f0b-1b5c8bea34f9")
 	)
 	(wire
 		(pts
@@ -413,16 +381,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 34.29) (xy 64.77 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61aea4c2-6d87-4f5a-9426-30b8ed4b30d6")
-	)
-	(wire
-		(pts
 			(xy 52.07 91.44) (xy 60.96 91.44)
 		)
 		(stroke
@@ -473,16 +431,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 27.94) (xy 54.61 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8876cf28-84a4-47b2-b9ed-ffba1f8a6ed4")
-	)
-	(wire
-		(pts
 			(xy 30.48 64.77) (xy 39.37 64.77)
 		)
 		(stroke
@@ -513,16 +461,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 27.94) (xy 57.15 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be3be5a7-0bde-46fa-8a5f-cf3f7da9c24f")
-	)
-	(wire
-		(pts
 			(xy 54.61 43.18) (xy 64.77 43.18)
 		)
 		(stroke
@@ -543,7 +481,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 25.4) (xy 64.77 34.29)
+			(xy 64.77 25.4) (xy 64.77 43.18)
 		)
 		(stroke
 			(width 0)
@@ -564,30 +502,6 @@
 		(uuid "014fad56-caa1-469b-91a9-c75ef8f901f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 64.6104 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "5 V"
-		(shape output)
-		(at 57.15 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b0751458-fa37-4ab0-b49b-ba0874d91e8a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.4009 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -696,88 +610,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 54.61 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6771454e-6fca-492b-8286-6e2214fe4e67")
-		(property "Reference" "C15"
-			(at 57.15 30.4862 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7µF"
-			(at 57.15 33.0262 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 54.61 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 54.61 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "47f83656-6d55-4aaf-a219-7b8725ad1f59")
-		)
-		(pin "2"
-			(uuid "e227c072-bdce-4392-9bf0-b4b7155c4fbe")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b"
-					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -1428,16 +1260,6 @@
 		(pin "12 V" output
 			(at 52.07 36.83 0)
 			(uuid "7dc6dac3-5991-4b33-ad9e-c5bcc1433187")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "5 V" output
-			(at 52.07 27.94 0)
-			(uuid "f12ab54c-ad15-487e-87f5-6ddef7c5c6d1")
 			(effects
 				(font
 					(size 1.27 1.27)
