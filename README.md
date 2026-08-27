@@ -1,72 +1,62 @@
-# Purdue ROV KiCad Board Template
+# X19 Float Board
 
-This is the central base template for starting any new hardware project at Purdue ROV.
+Schematic and PCB layout for the Purdue ROV X19 Float subsystem. This board manages motor/actuator control, power regulation, sensor data acquisition, STM32 microcontroller logic, and RF telemetry for the float mechanism.
 
----
+## Schematic Architecture
 
-## Features
-*   **Zero-Setup Library Loading**: Automatically references the central symbol and footprint libraries via the submodule in `libs/purdue-rov-kicad-lib`.
-*   **Merge Conflict Prevention**: Pre-configured `.gitattributes` to filter out volatile KiCad UI metadata before commits.
-*   **CI/CD Integration Ready**: Workflows configured to run automated Electrical Rules Check (ERC), Design Rules Check (DRC), and generate fabrication/assembly exports.
+The design is split into hierarchical sheets:
+- `stm32.kicad_sch`: STM32 microcontroller, clock generation, debug/programming interfaces, and I/O routing.
+- `pwr.kicad_sch`: Voltage regulation, input protection, and power distribution rails.
+- `Motor.kicad_sch`: Motor driver circuitry and actuator outputs.
+- `switch.kicad_sch`: Power switching and control logic.
+- `sensor.kicad_sch`: Subsystem sensor interfaces and signal conditioning.
+- `rf.kicad_sch`: RF communication circuitry and RF front-end routing.
 
----
+## Getting Started
 
-## How to Start a New Project
+### 1. Clone the Repository
+Clone recursively so the central component library submodule is included:
+```bash
+git clone --recursive https://github.com/purduerov/X19-Float-Board.git
+cd X19-Float-Board
+```
 
-1.  Click the **"Use this template"** button at the top of the GitHub repository.
-2.  Name your new repository (e.g., `depth-sensor-board`) and click **Create repository**.
-3.  Clone your new repository locally using the recursive flag to pull in the central library submodule:
-    ```bash
-    git clone --recursive https://github.com/purduerov/YOUR-BOARD-REPO.git
-    ```
-    > [!TIP]
-    > **Forgot the `--recursive` flag or seeing missing/question-mark symbols in KiCad?**
-    > Run this command in your terminal inside the project directory to fetch the library:
-    > ```bash
-    > git submodule update --init --recursive
-    > ```
-4.  Open the template `.kicad_pro` project in KiCad and rename the files to match your project name.
+If you cloned without `--recursive`:
+```bash
+git submodule update --init --recursive
+```
 
----
+### 2. Configure Git Clean Filters
+Run the setup script so volatile KiCad GUI metadata (window coordinates, zoom states) is automatically stripped before commits:
 
-## Local Git Clean Filters & Hooks (Automatic Setup)
+- **Windows (PowerShell):**
+  ```powershell
+  .\setup_git_filters.ps1
+  ```
+- **macOS / Linux:**
+  ```bash
+  ./setup_git_filters.sh
+  ```
 
-To ensure volatile KiCad metadata (like window positions, zoom levels, and time stamps) does not cause git merge conflicts, this template uses a **self-healing Git hook** system:
+### 3. Open in KiCad
+Open `X19-Float-Board.kicad_pro` in KiCad.
 
-### How it Works:
-1.  **Automatic Setup on Validation**: Running `./run_validation.ps1` or `./run_validation.sh` checks for Git clean filters and automatically configures them if they are missing.
-2.  **Pre-commit Verification**: We use a custom Git hook in `.githooks/pre-commit` mapped via `core.hooksPath`. When you make a commit, the hook verifies that the clean filters are active. If they are not, it automatically runs the setup script, configures them, and re-stages the cleaned KiCad files before completing the commit.
+## Local Validation (KiBot / Docker)
 
-If you ever need to manually configure the Git clean filters once on your machine:
-*   **Windows (PowerShell)**: Run `.\setup_git_filters.ps1`
-*   **Linux/macOS (Bash)**: Run `./setup_git_filters.sh`
+Run automated ERC, DRC, and manufacturing output generation (PDF schematics, interactive BOMs, Gerbers) locally:
 
----
+- **Windows:**
+  ```powershell
+  .\run_validation.ps1
+  ```
+- **macOS / Linux:**
+  ```bash
+  ./run_validation.sh
+  ```
 
-## Local One-Click Validation (Mock Jobset)
+Generated files are placed in `Generated_Outputs/`.
 
-Instead of waiting for the GitHub Action to run, you can test your board locally with a single command. This runs the central KiBot script (ERC, DRC, and exports) inside a Docker container:
+## Design Rules & Constraints
 
-*   **Windows**: Run `.\run_validation.ps1` in PowerShell.
-*   **Linux/macOS**: Run `./run_validation.sh` in your terminal.
-
-All schematic PDFs, Interactive BOMs, and Gerbers will generate in the `Generated_Outputs/` folder.
-
----
-
-## Custom DRC Rules
-
-This template includes a [custom_rules.kicad_dru](custom_rules.kicad_dru) file that pre-defines electrical isolation boundaries. For example, it enforces a minimum **2.0mm clearance** between high-power thruster lines (`Power_Thruster` netclass) and low-voltage logic (`Logic_3V3` netclass) to prevent condensation or noise faults.
-
----
-
-## Adding a Custom Central Part
-
-If you need a new symbol or footprint:
-1.  Open the submodule repository `libs/purdue-rov-kicad-lib` (or clone it separately).
-2.  Save your new symbol/footprint to the central library.
-3.  Commit your changes and open a Pull Request.
-4.  Once merged, update the submodule in your project repository:
-    ```bash
-    git submodule update --remote --merge
-    ```
+- Isolation rules are specified in `custom_rules.kicad_dru` (maintaining spacing between high-power motor lines and sensitive logic).
+- All components must be sourced from the central library (`libs/purdue-rov-kicad-lib`) with complete MPN, Manufacturer, and Datasheet fields.
