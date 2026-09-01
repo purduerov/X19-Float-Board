@@ -45,7 +45,7 @@ You can open `X19-Float-Board.kicad_pro` directly in KiCad, or run the launcher 
 
 The launcher script updates the `purdue-rov-kicad-lib` submodule to latest `master` before launching KiCad.
 
-## Central Component Library
+## Central Component Library & Manager GUI
 
 The project links to the central `purdue-rov-kicad-lib` submodule mapped across 6 categories in `sym-lib-table` and `fp-lib-table`:
 - `rov_passives`: Resistors, capacitors, inductors, crystals
@@ -54,6 +54,12 @@ The project links to the central `purdue-rov-kicad-lib` submodule mapped across 
 - `rov_connectors`: Power terminals, XT60, headers, USB, JST connectors
 - `rov_sensors`: IMUs, temperature, pressure sensors
 - `rov_mech`: Mounting holes, standoffs, test points
+
+### Launching the Library Manager GUI
+To browse parts, inspect footprints, edit properties, or add/delete components in the shared library:
+- **Windows:** Double-click `libs\purdue-rov-kicad-lib\LIBRARY_MANAGER.bat`
+- **macOS / Linux:** Run `./libs/purdue-rov-kicad-lib/LIBRARY_MANAGER.sh` (or `python3 libs/purdue-rov-kicad-lib/scripts/library_manager_gui.py`)
+
 
 ## Local Validation (KiBot / Docker)
 
