@@ -2,21 +2,28 @@
 
 The Float Board manages buoyancy systems, motor drivers, sensor telemetry, and power distribution for the Purdue ROV X19 vehicle.
 
-## Getting Started
+---
 
-### 1. Clone the Repository
+## 🚀 Quickstart: Opening the Project (Recommended)
+
+**Always open the project using the 1-click launcher:**
+
+* **Windows:** Double-click `LAUNCH_KICAD.bat`
+* **macOS / Linux:** Run `./LAUNCH_KICAD.sh`
+
+### What the Launcher Does Automatically:
+1. ⚙️ **Configures Git Hooks & Clean Filters:** Sets up Git to strip volatile viewport/zoom coordinates on every commit, preventing merge conflicts.
+2. 🔄 **Auto-Updates Component Library:** Pulls the freshest symbols, footprints, and 3D models from `purdue-rov-kicad-lib` before opening.
+3. 📐 **Opens KiCad:** Launches `X19-Float-Board.kicad_pro` with all 6 central library categories pre-linked.
+
+---
+
+## Cloning the Repository
 Clone recursively to ensure the central component library is initialized:
 ```bash
 git clone --recursive https://github.com/purduerov/X19-Float-Board.git
 cd X19-Float-Board
 ```
-
-### 2. Launch KiCad
-You can open `X19-Float-Board.kicad_pro` directly in KiCad, or run the 1-click launcher script:
-- **Windows:** Double-click `LAUNCH_KICAD.bat`
-- **macOS / Linux:** Run `./LAUNCH_KICAD.sh`
-
-The launcher script updates the `purdue-rov-kicad-lib` submodule to latest `master` before launching KiCad.
 
 ## Central Component Library & Manager GUI
 
@@ -56,4 +63,3 @@ All CI/CD automation and tooling are centralized in [`purduerov/pcb-devops`](htt
 2. **KiCad Symbol Linting:** Validates mandatory fields (`MPN`, `Manufacturer`, `Category`, `DigiKey`, `Datasheet`, `Temp_Range`) on all library components.
 3. **ERC & DRC Validation:** Executes Electrical and Design Rules Checks via KiBot in GitHub Actions.
 4. **Artifact Generation:** Automatically exports Schematic PDFs, Board Layout PDFs, and Interactive HTML BOMs on every pull request.
-
