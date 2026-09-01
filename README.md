@@ -1,45 +1,18 @@
 # X19 Float Board
 
-Schematic and PCB layout for the Purdue ROV X19 Float subsystem. This board manages motor/actuator control, power regulation, sensor data acquisition, STM32 microcontroller logic, and RF telemetry for the float mechanism.
-
-## Schematic Architecture
-
-The design is split into hierarchical sheets:
-- `stm32.kicad_sch`: STM32 microcontroller, clock generation, debug/programming interfaces, and I/O routing.
-- `pwr.kicad_sch`: Voltage regulation, input protection, and power distribution rails.
-- `Motor.kicad_sch`: Motor driver circuitry and actuator outputs.
-- `switch.kicad_sch`: Power switching and control logic.
-- `sensor.kicad_sch`: Subsystem sensor interfaces and signal conditioning.
-- `rf.kicad_sch`: RF communication circuitry and RF front-end routing.
+The Float Board manages buoyancy systems, motor drivers, sensor telemetry, and power distribution for the Purdue ROV X19 vehicle.
 
 ## Getting Started
 
 ### 1. Clone the Repository
-Clone recursively so the central component library submodule is included:
+Clone recursively to ensure the central component library is initialized:
 ```bash
 git clone --recursive https://github.com/purduerov/X19-Float-Board.git
 cd X19-Float-Board
 ```
 
-If you cloned without `--recursive`:
-```bash
-git submodule update --init --recursive
-```
-
-### 2. Configure Git Clean Filters
-Run the setup script so volatile KiCad GUI metadata (window coordinates, zoom states) is automatically stripped before commits:
-
-- **Windows (PowerShell):**
-  ```powershell
-  .\scripts\setup_git_filters.ps1
-  ```
-- **macOS / Linux:**
-  ```bash
-  ./scripts/setup_git_filters.sh
-  ```
-
-### 3. Open in KiCad
-You can open `X19-Float-Board.kicad_pro` directly in KiCad, or run the launcher script:
+### 2. Launch KiCad
+You can open `X19-Float-Board.kicad_pro` directly in KiCad, or run the 1-click launcher script:
 - **Windows:** Double-click `LAUNCH_KICAD.bat`
 - **macOS / Linux:** Run `./LAUNCH_KICAD.sh`
 
@@ -58,26 +31,28 @@ The project links to the central `purdue-rov-kicad-lib` submodule mapped across 
 ### Launching the Library Manager GUI
 To browse parts, inspect footprints, edit properties, or add/delete components in the shared library:
 - **Windows:** Double-click `libs\purdue-rov-kicad-lib\LIBRARY_MANAGER.bat`
-- **macOS / Linux:** Run `./libs/purdue-rov-kicad-lib/LIBRARY_MANAGER.sh` (or `python3 libs/purdue-rov-kicad-lib/scripts/library_manager_gui.py`)
+- **macOS / Linux:** Run `./libs/purdue-rov-kicad-lib/LIBRARY_MANAGER.sh`
 
+## Schematic Hierarchy
 
-## Local Validation (KiBot / Docker)
+The schematic is organized across functional sub-sheets:
+- `X19-Float-Board.kicad_sch`: Root top-level sheet.
+- `pwr.kicad_sch`: Power regulation and distribution.
+- `stm32.kicad_sch`: Main microcontroller circuit and programming interface.
+- `Motor.kicad_sch`: Motor driver stages and control signals.
+- `sensor.kicad_sch`: Environmental and diagnostic sensor telemetry.
+- `rf.kicad_sch`: Wireless/radio transceiver circuitry.
+- `switch.kicad_sch`: Power switching logic.
 
-Run automated ERC, DRC, and manufacturing output generation (PDF schematics, interactive BOMs, Gerbers) locally:
+## Design Rules & Clearances
 
-- **Windows:**
-  ```powershell
-  .\scripts\run_validation.ps1
-  ```
-- **macOS / Linux:**
-  ```bash
-  ./scripts/run_validation.sh
-  ```
+- High-voltage / high-current motor traces maintain isolation rules configured in `custom_rules.kicad_dru`.
+- All symbols must adhere to central library guidelines.
 
-Generated files are placed in `Generated_Outputs/`.
+## Automated CI/CD & DevOps Preflight Checks
 
-## Design Rules & Constraints
-
-- Isolation rules are specified in `custom_rules.kicad_dru` (maintaining spacing between high-power motor lines and sensitive logic).
-- All components must be sourced from the central library (`libs/purdue-rov-kicad-lib`) with complete MPN, Manufacturer, and Datasheet fields.
-
+All CI/CD automation and tooling are centralized in [`purduerov/pcb-devops`](https://github.com/purduerov/pcb-devops):
+1. **Automated Git Clean Filters:** Configured automatically by `.githooks/pre-commit` to prevent viewport/zoom merge noise.
+2. **KiCad Symbol Linting:** Validates mandatory fields (`MPN`, `Manufacturer`, `Category`, `DigiKey`, `Datasheet`, `Temp_Range`) on all library components.
+3. **ERC & DRC Validation:** Executes Electrical and Design Rules Checks via KiBot in GitHub Actions.
+4. **Artifact Generation:** Exports schematic PDFs, Interactive HTML BOMs, and fabrication Gerbers on every pull request.
