@@ -701,12 +701,6 @@
 		(uuid "0405ef3b-72d4-49cd-b746-21c7ec22984f")
 	)
 	(junction
-		(at 43.18 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bd074c6-b7de-4eb9-bb80-f836daaf27a5")
-	)
-	(junction
 		(at 35.56 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -723,6 +717,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d26645a9-5639-4334-9843-cb029f315d45")
+	)
+	(junction
+		(at 55.88 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6b1aefd-12a5-4682-8b41-37c7bfacc608")
 	)
 	(wire
 		(pts
@@ -756,16 +756,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 63.5) (xy 43.18 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d660e69-2228-44c1-8a3b-53ca4aff62a4")
-	)
-	(wire
-		(pts
 			(xy 36.83 66.04) (xy 36.83 67.31)
 		)
 		(stroke
@@ -773,6 +763,16 @@
 			(type default)
 		)
 		(uuid "4af2c183-130b-494c-9ecc-1c4fdc98130d")
+	)
+	(wire
+		(pts
+			(xy 55.88 63.5) (xy 62.23 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b8e2708-cefc-4220-b2d0-ef0f97b242b2")
 	)
 	(wire
 		(pts
@@ -796,16 +796,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 63.5) (xy 50.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b23e47f4-72b3-4838-a8b7-471de01769b7")
-	)
-	(wire
-		(pts
 			(xy 35.56 63.5) (xy 38.1 63.5)
 		)
 		(stroke
@@ -823,6 +813,16 @@
 			(type default)
 		)
 		(uuid "e3277f69-fba5-4c1b-bfed-dc4c920c7a95")
+	)
+	(wire
+		(pts
+			(xy 38.1 63.5) (xy 55.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea213a12-5c89-446b-bcf4-416e23d74d52")
 	)
 	(wire
 		(pts
@@ -856,7 +856,7 @@
 	)
 	(global_label "3.3 V"
 		(shape input)
-		(at 50.8 63.5 0)
+		(at 62.23 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -866,7 +866,7 @@
 		)
 		(uuid "0ca3bc53-7d42-4f88-94bd-fed001fc630f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.8652 63.5 0)
+			(at 70.2952 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -990,7 +990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86779c39-dc35-44f3-b6d8-23fa25e67f76")
-		(property "Reference" "R12"
+		(property "Reference" "R_PU_DEPTH_1"
 			(at 35.56 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1052,7 +1052,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "R12")
+					(reference "R_PU_DEPTH_1")
 					(unit 1)
 				)
 			)
@@ -1070,7 +1070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92b366a9-a78f-4986-b68b-7885c08f7e18")
-		(property "Reference" "J2"
+		(property "Reference" "DEPTH_CONN"
 			(at 26.035 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1092,7 +1092,6 @@
 		)
 		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
 			(at 25.4 66.04 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1138,7 +1137,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "J2")
+					(reference "DEPTH_CONN")
 					(unit 1)
 				)
 			)
@@ -1146,7 +1145,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 43.18 60.96 0)
+		(at 55.88 66.04 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1156,30 +1155,30 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c23da28d-d866-48e2-93a3-1a9e75776415")
-		(property "Reference" "C10"
-			(at 45.72 59.6962 0)
+		(property "Reference" "C_D_DEPTH1"
+			(at 58.42 64.7635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 45.72 62.2362 0)
+			(at 58.42 67.3035 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 43.18 60.96 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1190,7 +1189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 60.96 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1201,7 +1200,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 43.18 60.96 0)
+			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1220,7 +1219,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "C10")
+					(reference "C_D_DEPTH1")
 					(unit 1)
 				)
 			)
@@ -1228,7 +1227,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 58.42 180)
+		(at 55.88 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1239,7 +1238,7 @@
 		(fields_autoplaced yes)
 		(uuid "dddc7028-9f8b-48d6-8e93-c7809d062e5e")
 		(property "Reference" "#PWR015"
-			(at 43.18 52.07 0)
+			(at 55.88 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1250,17 +1249,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 53.34 0)
+			(at 58.42 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 58.42 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1271,7 +1271,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 58.42 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1282,7 +1282,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 58.42 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1316,7 +1316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd2eee97-28ab-474e-8ba1-b74066a7a640")
-		(property "Reference" "R11"
+		(property "Reference" "R_PU_DEPTH_0"
 			(at 33.02 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1378,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "R11")
+					(reference "R_PU_DEPTH_0")
 					(unit 1)
 				)
 			)

@@ -1230,7 +1230,7 @@
 	)
 	(global_label "12V"
 		(shape input)
-		(at 40.64 22.86 90)
+		(at 40.64 22.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1240,7 +1240,7 @@
 		)
 		(uuid "5e38a35f-7a69-4408-a5da-2d7469924638")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 16.3672 90)
+			(at 47.1328 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1275,7 +1275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27019fcb-b322-4080-b2ff-b78c4852ab9b")
-		(property "Reference" "Q1"
+		(property "Reference" "NMOS_MOTOR1"
 			(at 44.45 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1297,7 +1297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 43.18 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -1375,7 +1375,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
-					(reference "Q1")
+					(reference "NMOS_MOTOR1")
 					(unit 1)
 				)
 			)
@@ -1393,7 +1393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30ede20e-b7c2-45a9-b4f7-5c8ff0c22295")
-		(property "Reference" "R14"
+		(property "Reference" "R_PWM_MOTOR1"
 			(at 30.48 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1455,7 +1455,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
-					(reference "R14")
+					(reference "R_PWM_MOTOR1")
 					(unit 1)
 				)
 			)
@@ -1473,7 +1473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ad93cec-1648-4c52-8816-509c0ad927ea")
-		(property "Reference" "J1"
+		(property "Reference" "MOTOR_CONN1"
 			(at 46.99 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1495,7 +1495,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 45.72 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1537,7 +1537,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
-					(reference "J1")
+					(reference "MOTOR_CONN1")
 					(unit 1)
 				)
 			)
@@ -1633,7 +1633,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ee645a0-32fa-4509-9778-92013c07ac35")
-		(property "Reference" "R13"
+		(property "Reference" "R_PD_MOTOR1"
 			(at 30.48 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1697,7 +1697,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
-					(reference "R13")
+					(reference "R_PD_MOTOR1")
 					(unit 1)
 				)
 			)
@@ -1705,7 +1705,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 27.94 90)
+		(at 46.99 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1716,7 +1716,7 @@
 		(fields_autoplaced yes)
 		(uuid "c432286d-12cb-42a2-85a1-5e21d7871af5")
 		(property "Reference" "#PWR012"
-			(at 53.34 27.94 0)
+			(at 46.99 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1727,14 +1727,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 27.9399 90)
+			(at 49.53 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1805,7 +1805,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "D_MOTOR"
 			(at 29.21 35.2424 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1876,7 +1876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4fb0bfa-6b0c-4a98-a427-45eeb330d95d")
-		(property "Reference" "C11"
+		(property "Reference" "C_D_MOTOR1"
 			(at 44.4563 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1938,7 +1938,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
-					(reference "C11")
+					(reference "C_D_MOTOR1")
 					(unit 1)
 				)
 			)

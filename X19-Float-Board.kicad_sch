@@ -627,7 +627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b15d5149-39fc-4767-b788-c28dc9d603d1")
-		(property "Reference" "C16"
+		(property "Reference" "C_D_PWR_3.3"
 			(at 57.15 21.5962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -691,7 +691,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b"
-					(reference "C16")
+					(reference "C_D_PWR_3.3")
 					(unit 1)
 				)
 			)
@@ -709,7 +709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe7c4fcd-0034-4b13-b545-56a82d733516")
-		(property "Reference" "C14"
+		(property "Reference" "C_D_PWR_12"
 			(at 57.15 39.3762 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -773,7 +773,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b"
-					(reference "C14")
+					(reference "C_D_PWR_12")
 					(unit 1)
 				)
 			)
