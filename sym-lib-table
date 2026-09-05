@@ -1,6 +1,9 @@
 (sym_lib_table
-	(version 7)
-	(lib (name "ROV_Symbols") (type "KiCad") (uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_parts.kicad_sym") (options "") (descr "Purdue ROV Central Symbols"))
-	(lib (name "Stm32") (type "KiCad") (uri "/Users/mattmswang/Downloads/ul_STM32G431RBT6/KiCADv6/2026-08-12_16-17-23.kicad_sym") (options "") (descr ""))
-	(lib (name "X19-Float-Board-eagle-import") (type "KiCad") (uri "${KIPRJMOD}/X19-Float-Board-eagle-import.kicad_sym") (options "") (descr ""))
+  (lib (name "rov_passives")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_passives.kicad_sym")(options "")(descr "Purdue ROV Passives Symbols"))
+  (lib (name "rov_power")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_power.kicad_sym")(options "")(descr "Purdue ROV Power Symbols"))
+  (lib (name "rov_logic")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_logic.kicad_sym")(options "")(descr "Purdue ROV Logic Symbols"))
+  (lib (name "rov_connectors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_connectors.kicad_sym")(options "")(descr "Purdue ROV Connectors Symbols"))
+  (lib (name "rov_sensors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_sensors.kicad_sym")(options "")(descr "Purdue ROV Sensors Symbols"))
+  (lib (name "rov_mech")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_mech.kicad_sym")(options "")(descr "Purdue ROV Mechanical Symbols"))
+  (lib (name "X19-Float-Board-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/X19-Float-Board-eagle-import.kicad_sym")(options "")(descr ""))
 )

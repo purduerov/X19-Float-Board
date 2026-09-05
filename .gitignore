@@ -1,19 +1,27 @@
-# KiCad generated files
-*.bak
-*.lck
-*-backups/
-_autosave-*
+# KiCad temp/backup files
 *.tmp
-*_temp/
+*-bak
+*-back
+*.bak
+*-save
+*~
+_autosave-*
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.lck
+~*.lck
 
-# DevOps Cache & Output Directories
-.pcb-devops-cache/
+# KiBot / Output directories
 Generated_Outputs/
 Outputs/
-local_kibot.yaml
-digikey_token.json
+.pcb-devops-cache/
 
-# OS and Editor files
+# Backups & history
+*-backups/
+.history/
+
+# OS/Editor files
 .DS_Store
 Thumbs.db
-__pycache__/

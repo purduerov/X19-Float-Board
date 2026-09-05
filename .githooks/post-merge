@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Post-merge hook to automatically update submodules after pull/merge
+echo "🔄 Auto-updating submodules after merge..."
+git submodule update --init --recursive
