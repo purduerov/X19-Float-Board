@@ -1070,7 +1070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92b366a9-a78f-4986-b68b-7885c08f7e18")
-		(property "Reference" "DEPTH_CONN"
+		(property "Reference" "DEPTH_CONN1"
 			(at 26.035 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1137,7 +1137,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "DEPTH_CONN")
+					(reference "DEPTH_CONN1")
 					(unit 1)
 				)
 			)

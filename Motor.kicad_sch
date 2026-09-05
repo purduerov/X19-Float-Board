@@ -1228,7 +1228,7 @@
 		)
 		(uuid "f457f22a-022e-4a10-a6c2-3937401b220f")
 	)
-	(global_label "12V"
+	(global_label "12 V"
 		(shape input)
 		(at 40.64 22.86 0)
 		(fields_autoplaced yes)
@@ -1240,7 +1240,7 @@
 		)
 		(uuid "5e38a35f-7a69-4408-a5da-2d7469924638")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.1328 22.86 0)
+			(at 48.1004 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
