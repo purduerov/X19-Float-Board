@@ -1155,8 +1155,8 @@
 		)
 		(uuid "33d991ff-5ae4-4bda-851c-d79719158fbe")
 	)
-	(hierarchical_label "LIGHT VOLTAGE"
-		(shape input)
+	(hierarchical_label "Light Voltage"
+		(shape output)
 		(at 39.37 85.09 180)
 		(effects
 			(font

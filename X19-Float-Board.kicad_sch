@@ -281,7 +281,19 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: add new components, add more decoupling near every power, 4 layer, find where to put temperature sensor\nClean up dense scematic in sensors\n"
+	(rectangle
+		(start 21.59 66.04)
+		(end 88.9 137.16)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "36735592-436e-450d-9271-6a07e1ea764c")
+	)
+	(text "TODO: add new components, add more decoupling near every power, 4 layer, find where to put temperature sensor\nClean up dense scematic in sensors\nput blocks for smaller components\ntheresistor for thermal\nppower monitor on 12V\nstlink implementation for backup programming\nusb-c can power the whole thing except the motor\npower mux or switch\n\n\n"
 		(exclude_from_sim no)
 		(at 227.584 18.542 0)
 		(effects
@@ -341,6 +353,26 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 92.71) (xy 163.83 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23545a4a-b780-4399-a0b3-4d0682e649b2")
+	)
+	(wire
+		(pts
+			(xy 133.35 124.46) (xy 142.24 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4fc39b-c396-4d8f-ad30-0c066ce1c0f7")
+	)
+	(wire
+		(pts
 			(xy 154.94 68.58) (xy 163.83 68.58)
 		)
 		(stroke
@@ -348,6 +380,16 @@
 			(type default)
 		)
 		(uuid "3d573a41-bf2f-4e79-b299-3d3078423583")
+	)
+	(wire
+		(pts
+			(xy 133.35 60.96) (xy 142.24 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441a1701-38cb-4080-9fdc-2629d9f9b6e2")
 	)
 	(wire
 		(pts
@@ -368,6 +410,16 @@
 			(type default)
 		)
 		(uuid "48876065-0599-43e9-90f4-bb637f59b3d7")
+	)
+	(wire
+		(pts
+			(xy 154.94 114.3) (xy 163.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5942bb-11c8-4171-8b84-d1e6cbfe481c")
 	)
 	(wire
 		(pts
@@ -411,6 +463,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 106.68) (xy 163.83 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76d8bfe5-bf7f-4f3b-a35a-4f3c1df361a3")
+	)
+	(wire
+		(pts
 			(xy 52.07 19.05) (xy 54.61 19.05)
 		)
 		(stroke
@@ -441,6 +503,26 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 96.52) (xy 163.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89c2988e-cb9d-4a76-a600-cb9bdbd9e955")
+	)
+	(wire
+		(pts
+			(xy 154.94 100.33) (xy 163.83 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a946cef-46ea-4eb5-bde9-25cc87c44709")
+	)
+	(wire
+		(pts
 			(xy 133.35 53.34) (xy 142.24 53.34)
 		)
 		(stroke
@@ -448,6 +530,16 @@
 			(type default)
 		)
 		(uuid "a10c5b2f-b6f9-4873-8b08-f95224a50c3e")
+	)
+	(wire
+		(pts
+			(xy 133.35 119.38) (xy 142.24 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28a7d38-dfcd-4efd-8245-71b1e1531a99")
 	)
 	(wire
 		(pts
@@ -491,6 +583,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 121.92) (xy 142.24 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1b1a23-801c-4f0b-ae83-ad4ca2c0e738")
+	)
+	(wire
+		(pts
 			(xy 64.77 25.4) (xy 64.77 43.18)
 		)
 		(stroke
@@ -498,6 +600,16 @@
 			(type default)
 		)
 		(uuid "dcf1e38b-37df-4443-993c-2d21353fb705")
+	)
+	(wire
+		(pts
+			(xy 154.94 110.49) (xy 163.83 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef3c763b-fda3-401f-b12b-56964565e397")
 	)
 	(global_label "12 V"
 		(shape output)
@@ -845,8 +957,8 @@
 		)
 	)
 	(sheet
-		(at 163.83 92.71)
-		(size 12.7 55.88)
+		(at 163.83 88.9)
+		(size 12.7 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -861,7 +973,7 @@
 		)
 		(uuid "5aacdb22-1c13-4dbb-a723-da6d6af85e48")
 		(property "Sheetname" "TELEM"
-			(at 163.83 91.9984 0)
+			(at 163.83 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -872,7 +984,7 @@
 			)
 		)
 		(property "Sheetfile" "TELEM.kicad_sch"
-			(at 163.83 149.1746 0)
+			(at 163.83 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -883,7 +995,7 @@
 			)
 		)
 		(pin "PWR_ALERT" output
-			(at 163.83 96.52 180)
+			(at 163.83 92.71 180)
 			(uuid "17387ef3-7404-4a36-a984-42bed621f3fd")
 			(effects
 				(font
@@ -893,7 +1005,7 @@
 			)
 		)
 		(pin "PWR_SCL" output
-			(at 163.83 101.6 180)
+			(at 163.83 96.52 180)
 			(uuid "c599a4b7-d052-4130-a3ec-1de7254231c7")
 			(effects
 				(font
@@ -903,7 +1015,7 @@
 			)
 		)
 		(pin "PWR_SDA" output
-			(at 163.83 109.22 180)
+			(at 163.83 100.33 180)
 			(uuid "e45751b8-4598-4bd4-b7c7-3bb774c4def2")
 			(effects
 				(font
@@ -913,7 +1025,7 @@
 			)
 		)
 		(pin "TMP_ALERT" output
-			(at 163.83 116.84 180)
+			(at 163.83 106.68 180)
 			(uuid "cb3a2b6c-a922-437f-ae87-83d097138b55")
 			(effects
 				(font
@@ -923,7 +1035,7 @@
 			)
 		)
 		(pin "TMP_SCL" output
-			(at 163.83 127 180)
+			(at 163.83 110.49 180)
 			(uuid "f4b2bca8-202e-4c09-bd54-3734d1167c8a")
 			(effects
 				(font
@@ -933,7 +1045,7 @@
 			)
 		)
 		(pin "TMP_SDA" output
-			(at 163.83 137.16 180)
+			(at 163.83 114.3 180)
 			(uuid "c3f945e3-a238-44cf-98e2-e4ad1a0b8a59")
 			(effects
 				(font
@@ -1008,9 +1120,9 @@
 				(justify right)
 			)
 		)
-		(pin "LIGHT VOLTAGE" input
+		(pin "Light Voltage" output
 			(at 133.35 60.96 0)
-			(uuid "e52d1625-9a62-4001-81aa-517ebfc56df8")
+			(uuid "5be82a70-ba42-4141-9772-abefce71733e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1083,7 +1195,7 @@
 		)
 	)
 	(sheet
-		(at 114.3 91.44)
+		(at 115.57 116.84)
 		(size 17.78 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1099,7 +1211,7 @@
 		)
 		(uuid "a48ef629-2008-469d-8f12-01e25862528e")
 		(property "Sheetname" "USB-C"
-			(at 114.3 90.7284 0)
+			(at 115.57 116.1284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1110,7 +1222,7 @@
 			)
 		)
 		(property "Sheetfile" "USB-C.kicad_sch"
-			(at 114.3 100.9146 0)
+			(at 115.57 126.3146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1120,8 +1232,8 @@
 				(justify left top)
 			)
 		)
-		(pin "USB-C_DN2" input
-			(at 132.08 93.98 0)
+		(pin "USB-C_DN2" output
+			(at 133.35 119.38 0)
 			(uuid "d1d3944b-f15b-4f61-a6c3-9f5a6a325fe3")
 			(effects
 				(font
@@ -1130,8 +1242,8 @@
 				(justify right)
 			)
 		)
-		(pin "USB-C_DP2" input
-			(at 132.08 96.52 0)
+		(pin "USB-C_DP2" output
+			(at 133.35 121.92 0)
 			(uuid "895dd01b-ecd2-4055-8ca8-755dac51a99f")
 			(effects
 				(font
@@ -1140,8 +1252,8 @@
 				(justify right)
 			)
 		)
-		(pin "USB-C_VBUS_A" input
-			(at 132.08 99.06 0)
+		(pin "USB-C_VBUS_A" output
+			(at 133.35 124.46 0)
 			(uuid "cc37f20f-0217-4203-b440-b7323577569f")
 			(effects
 				(font
@@ -1294,6 +1406,106 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "INA ALERT" input
+			(at 154.94 92.71 0)
+			(uuid "08ef8232-3e6a-4ad7-a7af-49dca6c2e098")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INA SCL" input
+			(at 154.94 96.52 0)
+			(uuid "d9545f3a-0de2-48a4-b948-2cbac79789c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INA SDA" input
+			(at 154.94 100.33 0)
+			(uuid "5cc97dca-d893-4f35-9c2c-97fd7b0eb20b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP ALERT" input
+			(at 154.94 106.68 0)
+			(uuid "9c69cdc1-6f66-4674-a8e7-d73f95c07b49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP SCL" input
+			(at 154.94 110.49 0)
+			(uuid "94be86e9-3a5f-4153-9de2-ec2a8363480b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP SDA" input
+			(at 154.94 114.3 0)
+			(uuid "b7721224-b96d-45b5-86ba-8b3a07cee687")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB BUS" input
+			(at 142.24 119.38 180)
+			(uuid "de0d44b6-adcd-49d1-a106-c5d6fa3df8ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB DN" input
+			(at 142.24 121.92 180)
+			(uuid "c6cfa645-0f5b-4d92-bd7b-4d6b84599478")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB DP" input
+			(at 142.24 124.46 180)
+			(uuid "93b90f18-4a00-4b46-80d8-6b8164f8ccab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Light Volts" input
+			(at 142.24 60.96 180)
+			(uuid "9cdc11e9-6937-46a2-a0bd-a2b2f1ca48ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
