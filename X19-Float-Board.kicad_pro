@@ -672,7 +672,7 @@
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "R_PD_USBC_1-2,MOTOR_CONN1,SCREW_PWR1,R_PU_SWITCH1,NMOS_MOTOR1,R_PD_MOTOR1,DEPTH_CONN1,L_PWR1,C_D_SWITCH1,D_PWR1,C_D_RF1,R_PWM_MOTOR1,C_D_DEPTH1,20kΩ1,C_D_STM1,usb_c1,C_D_MOTOR1,1,FUSE_PWR1,5.1kΩ1,R1,#PWR7,#PWR10-11,10kΩ1,J1,J4",
+    "used_designators": "C_D_MOTOR1,NMOS_MOTOR1,C1-4,U2,U4-6,10kΩ1,R_PU_SWITCH1,R_PD_USBC_1-2,20kΩ1,L1,D_PWR1,C_D_RF1,R_PD_MOTOR1,MOTOR_CONN1,SCREW_PWR1,R_USBC_DIV1-2,DEPTH_CONN1,L_PWR1,C_D_SWITCH1,R_PWM_MOTOR1,C_D_DEPTH1,1,C_D_STM1-3,usb_c1,5.1kΩ1,FUSE_PWR1,R1-13,#PWR2-7,#PWR10-11,#PWR19-21,#PWR23-28,J1,J4",
     "variants": []
   },
   "sheets": [
@@ -694,7 +694,7 @@
     ],
     [
       "5f356ab3-657b-42f3-9a8b-ebc79580ebf5",
-      "sensor"
+      "Sensors"
     ],
     [
       "0ac88440-db6d-4d31-a4a6-0df1c7290ceb",
@@ -703,6 +703,14 @@
     [
       "dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c",
       "PWR"
+    ],
+    [
+      "a48ef629-2008-469d-8f12-01e25862528e",
+      "USB-C"
+    ],
+    [
+      "5aacdb22-1c13-4dbb-a723-da6d6af85e48",
+      "TELEM"
     ]
   ],
   "text_variables": {},

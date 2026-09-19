@@ -281,6 +281,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: add new components, add more decoupling near every power, 4 layer, find where to put temperature sensor\nClean up dense scematic in sensors\n"
+		(exclude_from_sim no)
+		(at 220.726 67.056 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "24865b01-89ed-45de-8e6a-4f345fbf48d3")
+	)
 	(junction
 		(at 54.61 36.83)
 		(diameter 0)
@@ -836,6 +846,112 @@
 		)
 	)
 	(sheet
+		(at 81.28 115.57)
+		(size 12.7 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5aacdb22-1c13-4dbb-a723-da6d6af85e48")
+		(property "Sheetname" "TELEM"
+			(at 81.28 114.8584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TELEM.kicad_sch"
+			(at 81.28 172.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWR_ALERT" output
+			(at 81.28 119.38 180)
+			(uuid "17387ef3-7404-4a36-a984-42bed621f3fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_SCL" output
+			(at 81.28 124.46 180)
+			(uuid "c599a4b7-d052-4130-a3ec-1de7254231c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_SDA" output
+			(at 81.28 132.08 180)
+			(uuid "e45751b8-4598-4bd4-b7c7-3bb774c4def2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TMP_ALERT" output
+			(at 81.28 139.7 180)
+			(uuid "cb3a2b6c-a922-437f-ae87-83d097138b55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TMP_SCL" output
+			(at 81.28 149.86 180)
+			(uuid "f4b2bca8-202e-4c09-bd54-3734d1167c8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TMP_SDA" output
+			(at 81.28 160.02 180)
+			(uuid "c3f945e3-a238-44cf-98e2-e4ad1a0b8a59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 17.78 63.5)
 		(size 12.7 6.35)
 		(exclude_from_sim no)
@@ -851,7 +967,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "5f356ab3-657b-42f3-9a8b-ebc79580ebf5")
-		(property "Sheetname" "sensor"
+		(property "Sheetname" "Sensors"
 			(at 17.78 62.7884 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -953,6 +1069,82 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 105.41)
+		(size 12.7 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a48ef629-2008-469d-8f12-01e25862528e")
+		(property "Sheetname" "USB-C"
+			(at 39.37 104.6984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB-C.kicad_sch"
+			(at 39.37 132.6646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB-C_DN2" input
+			(at 39.37 107.95 180)
+			(uuid "88cf90ad-68f1-4d87-8a13-0ec6296f7b5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB-C_DP2" input
+			(at 39.37 111.76 180)
+			(uuid "079814b4-a813-4fc4-aaaa-16bc1cb25fcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB-C_VBUS_A" input
+			(at 39.37 114.3 180)
+			(uuid "c9bbe65a-2be3-4576-8c93-b28e1288246c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b"
+					(page "8")
 				)
 			)
 		)
