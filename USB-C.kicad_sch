@@ -1082,7 +1082,7 @@
 		(uuid "fd95d3f2-d844-4e71-9a95-62ed54fbc79b")
 	)
 	(hierarchical_label "USB-C_VBUS_A"
-		(shape input)
+		(shape output)
 		(at 95.25 25.4 0)
 		(effects
 			(font
@@ -1093,7 +1093,7 @@
 		(uuid "546398dc-7339-4fb6-b94a-6bcfa3fc7ab9")
 	)
 	(hierarchical_label "USB-C_DN2"
-		(shape input)
+		(shape output)
 		(at 95.25 45.72 0)
 		(effects
 			(font
@@ -1104,7 +1104,7 @@
 		(uuid "c874ab23-11e9-4988-8098-da4c77e50967")
 	)
 	(hierarchical_label "USB-C_DP2"
-		(shape input)
+		(shape output)
 		(at 95.25 48.26 0)
 		(effects
 			(font
