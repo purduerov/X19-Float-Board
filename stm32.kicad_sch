@@ -1734,17 +1734,6 @@
 		)
 		(uuid "9948792c-50c9-4740-9055-f07f0de8c57c")
 	)
-	(hierarchical_label "USB DP"
-		(shape input)
-		(at 358.14 1.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b4c057fa-a959-4960-9793-de81479207d7")
-	)
 	(hierarchical_label "INA ALERT"
 		(shape input)
 		(at 246.38 49.53 0)

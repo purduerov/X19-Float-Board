@@ -293,9 +293,9 @@
 		)
 		(uuid "36735592-436e-450d-9271-6a07e1ea764c")
 	)
-	(text "TODO: add new components, add more decoupling near every power, 4 layer, find where to put temperature sensor\nClean up dense scematic in sensors\nput blocks for smaller components\ntheresistor for thermal\nppower monitor on 12V\nstlink implementation for backup programming\nusb-c can power the whole thing except the motor\npower mux or switch\n\n\n"
+	(text "TODO: add new components, add more decoupling near every power, 4 layer, find where to put temperature sensor\nClean up dense scematic in sensors\nput blocks for smaller components\nppower monitor on 12V\nstlink implementation for backup programming\nusb-c can power the whole thing except the motor\nH bridge\npower mux or switch\nCheck data sheet for what to connect pins to for if it needs to be connected to smth -> rst pull up \nstm32mx2 (later)\nFerrite bead for vref +\nH bridge drv8231\nanother ferrite bead for photoresistor divider\n10k pullup for i2c depth and battery monitor\nBattery voltage monitoring\nchange ina from 228 to 237 from standard component library\nusb TVS\ni2c pullup, all i2c is same thing cuz bus\neach alert still gets its own pin\n12v high and 12v low for ina power monitoring\nResistors and capacitor on current sensing, capacitor between vin+ and vin-\n\n\n"
 		(exclude_from_sim no)
-		(at 227.584 18.542 0)
+		(at 227.838 37.592 0)
 		(effects
 			(font
 				(size 1.27 1.27)

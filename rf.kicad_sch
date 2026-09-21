@@ -779,7 +779,7 @@
 				)
 			)
 		)
-		(property "Footprint" "customrf:rf module"
+		(property "Footprint" "CustomFootprints:rf module"
 			(at 88.9 48.26 0)
 			(hide yes)
 			(show_name no)
