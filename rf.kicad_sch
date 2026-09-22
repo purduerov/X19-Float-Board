@@ -606,20 +606,50 @@
 		)
 	)
 	(junction
-		(at 78.74 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39c96f08-c2bc-455f-97b1-dc827e8707e0")
-	)
-	(junction
-		(at 73.66 58.42)
+		(at 64.77 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7aa0316-5ab1-4078-bb7c-06bc1b8d1a75")
 	)
+	(junction
+		(at 69.85 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebea849e-8bc5-4ba5-8c3e-cb132aa6b8df")
+	)
+	(no_connect
+		(at 96.52 58.42)
+		(uuid "2e1a54e2-8785-4a68-9d4d-cdc4236998ff")
+	)
+	(no_connect
+		(at 96.52 50.8)
+		(uuid "3c33f8e2-af18-4e43-a0ad-044197d5d443")
+	)
+	(no_connect
+		(at 96.52 55.88)
+		(uuid "7df63f94-6f87-438a-b39b-f55a748683d0")
+	)
+	(no_connect
+		(at 96.52 48.26)
+		(uuid "9218a4bf-313d-4dd6-a204-57e9711df28f")
+	)
+	(no_connect
+		(at 96.52 53.34)
+		(uuid "a651ad6d-a00e-445d-9bc0-5f72222565da")
+	)
 	(wire
 		(pts
-			(xy 73.66 55.88) (xy 73.66 58.42)
+			(xy 69.85 60.96) (xy 69.85 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c7c5fe7-b2dc-4b3b-8cbe-a584b47fede9")
+	)
+	(wire
+		(pts
+			(xy 64.77 55.88) (xy 64.77 58.42)
 		)
 		(stroke
 			(width 0)
@@ -629,7 +659,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 58.42) (xy 81.28 58.42)
+			(xy 64.77 58.42) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
@@ -639,7 +669,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 58.42) (xy 73.66 58.42)
+			(xy 58.42 58.42) (xy 64.77 58.42)
 		)
 		(stroke
 			(width 0)
@@ -649,7 +679,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 55.88) (xy 81.28 55.88)
+			(xy 69.85 55.88) (xy 81.28 55.88)
 		)
 		(stroke
 			(width 0)
@@ -659,7 +689,7 @@
 	)
 	(global_label "3.3 V"
 		(shape input)
-		(at 67.31 58.42 180)
+		(at 58.42 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -669,7 +699,7 @@
 		)
 		(uuid "f77557d1-48d5-4276-94d7-0d3a4f598f09")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.2448 58.42 0)
+			(at 50.3548 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -865,7 +895,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 76.2 55.88 270)
+		(at 67.31 55.88 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -876,7 +906,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ed1f11c-fdbf-4e0f-862c-b800571edc3c")
 		(property "Reference" "C_D_RF1"
-			(at 76.1936 49.53 90)
+			(at 67.3036 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -886,7 +916,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 76.1936 52.07 90)
+			(at 67.3036 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -896,7 +926,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 76.2 55.88 0)
+			(at 67.31 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -907,7 +937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 55.88 0)
+			(at 67.31 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -918,7 +948,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 76.2 55.88 0)
+			(at 67.31 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -945,7 +975,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 55.88 0)
+		(at 69.85 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -956,7 +986,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e491db8-90fc-48e1-a3e5-763769ab9d16")
 		(property "Reference" "#PWR017"
-			(at 78.74 62.23 0)
+			(at 69.85 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -967,7 +997,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 57.1499 0)
+			(at 72.39 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -978,7 +1008,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 55.88 0)
+			(at 69.85 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -989,7 +1019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 55.88 0)
+			(at 69.85 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1000,7 +1030,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 55.88 0)
+			(at 69.85 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
