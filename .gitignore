@@ -25,3 +25,5 @@ Thumbs.db
 # Central devops cache
 .pcb-devops-cache/
 
+# Generated local ROV hooks
+.rov-hooks/
