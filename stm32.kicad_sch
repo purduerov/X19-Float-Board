@@ -1353,6 +1353,208 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TVSdiodeusb:ESD122DMXR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 20.32 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "ESD122DMXR"
+				(at 20.32 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "DMX3_TEX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/esd122"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ESD122DMXR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DMX3_TEX DMX3_TEX-M DMX3_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ESD122DMXR_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 33.02 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -7.62) (xy 33.02 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3141,12 +3343,6 @@
 		(uuid "4c92c6e3-7b3a-4047-8b77-9ad285d814f6")
 	)
 	(junction
-		(at 167.64 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "518a4e6a-f0d3-440a-a6dd-c1959b594ce9")
-	)
-	(junction
 		(at 115.57 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3165,10 +3361,10 @@
 		(uuid "7f75119c-28e2-4e00-853d-d08f08c8b97b")
 	)
 	(junction
-		(at 168.91 137.16)
+		(at 165.1 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8fe8d804-add1-464a-bb20-89006aa7a095")
+		(uuid "8b5985cf-637e-4eb6-80b8-5511da31fcbc")
 	)
 	(junction
 		(at 72.39 44.45)
@@ -3177,28 +3373,22 @@
 		(uuid "95a7cbc0-d877-4329-ab56-e492e21bb6c6")
 	)
 	(junction
-		(at 170.18 114.3)
+		(at 167.64 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "995c5a5a-7c52-4ef7-aa62-70c240a43480")
+		(uuid "9e6a7ff8-7560-473e-8622-e42ea4e11ee2")
 	)
 	(junction
 		(at 149.86 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c2056b1e-1113-447f-a9b1-ac1490f0cc88")
+		(uuid "a93e1827-042c-4028-9f54-c388dea727b4")
 	)
 	(junction
 		(at 143.51 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcd09bb8-09c3-4f05-8b41-ce35de0151c8")
-	)
-	(junction
-		(at 187.96 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dde47ccf-d620-4709-b68f-13ce9ed0e09c")
 	)
 	(junction
 		(at 77.47 44.45)
@@ -3212,7 +3402,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 114.3) (xy 170.18 114.3)
+			(xy 134.62 114.3) (xy 165.1 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3252,6 +3442,26 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 114.3) (xy 205.74 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "073143b8-7c65-4056-9681-863f05e6c397")
+	)
+	(wire
+		(pts
+			(xy 205.74 121.92) (xy 205.74 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b2b923c-2882-4313-b089-e1e42219a176")
+	)
+	(wire
+		(pts
 			(xy 139.7 106.68) (xy 139.7 116.84)
 		)
 		(stroke
@@ -3259,16 +3469,6 @@
 			(type default)
 		)
 		(uuid "0ed429c6-ce70-4cdf-822a-ef765bd3e24f")
-	)
-	(wire
-		(pts
-			(xy 167.64 121.92) (xy 168.91 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f5980e6-49dd-481d-9548-edd168b6e066")
 	)
 	(wire
 		(pts
@@ -3302,6 +3502,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 71.12) (xy 170.18 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a595d44-da86-4d19-8a1b-2d510f9c1464")
+	)
+	(wire
+		(pts
 			(xy 170.18 27.94) (xy 170.18 30.48)
 		)
 		(stroke
@@ -3322,6 +3532,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 68.58) (xy 167.64 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27f70ba2-c9b4-4980-946b-cd0065a8dc39")
+	)
+	(wire
+		(pts
 			(xy 87.63 48.26) (xy 92.71 48.26)
 		)
 		(stroke
@@ -3332,13 +3552,23 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 114.3) (xy 170.18 71.12)
+			(xy 205.74 124.46) (xy 208.28 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b7249fb-dbca-4cf3-9df2-c696c8b08a69")
+		(uuid "364547f9-f8e2-4111-9a39-1003bc7a9abd")
+	)
+	(wire
+		(pts
+			(xy 165.1 66.04) (xy 165.1 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b30ff3e-2373-4384-9369-2fa78f3ac13a")
 	)
 	(wire
 		(pts
@@ -3412,16 +3642,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 101.6) (xy 165.1 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56e5167a-c351-47e3-8c29-6dd7d840220b")
-	)
-	(wire
-		(pts
 			(xy 143.51 104.14) (xy 144.78 104.14)
 		)
 		(stroke
@@ -3432,13 +3652,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 137.16) (xy 168.91 137.16)
+			(xy 208.28 124.46) (xy 208.28 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6119b4d8-c4c7-4da3-8ce2-184afa31f790")
+		(uuid "5eb30f53-6ed5-4a98-891d-619c05213ea3")
 	)
 	(wire
 		(pts
@@ -3452,13 +3672,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 114.3) (xy 187.96 121.92)
+			(xy 170.18 101.6) (xy 149.86 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c721f20-47a0-4e26-b606-a30169c46a83")
+		(uuid "750bdac8-5ad4-4ebe-ba94-0eb21562fe52")
 	)
 	(wire
 		(pts
@@ -3502,6 +3722,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 111.76) (xy 208.28 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bc3bfc4-7f1f-4b81-8028-3c30556db978")
+	)
+	(wire
+		(pts
 			(xy 167.64 35.56) (xy 170.18 35.56)
 		)
 		(stroke
@@ -3509,16 +3739,6 @@
 			(type default)
 		)
 		(uuid "90910243-0564-47fd-81c2-374079279e5b")
-	)
-	(wire
-		(pts
-			(xy 170.18 114.3) (xy 187.96 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "983766ee-4983-4e4b-84ca-ebc2fe2ab443")
 	)
 	(wire
 		(pts
@@ -3542,33 +3762,23 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 101.6) (xy 165.1 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4ed1a63-e92e-4854-ab72-1e0bc2af9fab")
-	)
-	(wire
-		(pts
-			(xy 167.64 68.58) (xy 163.83 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c02ee358-a7e4-4667-9ef5-a74fa1808977")
-	)
-	(wire
-		(pts
-			(xy 168.91 137.16) (xy 187.96 137.16)
+			(xy 149.86 137.16) (xy 187.96 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c087f38a-70e4-41e0-a89e-4eb81701154a")
+	)
+	(wire
+		(pts
+			(xy 163.83 71.12) (xy 170.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c19f2187-661d-43a7-bc7e-4f42f1ddf761")
 	)
 	(wire
 		(pts
@@ -3582,13 +3792,13 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 111.76) (xy 167.64 68.58)
+			(xy 167.64 68.58) (xy 167.64 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d09d850a-17e9-47a7-a84f-d1755863e7b8")
+		(uuid "cf7e3415-6d11-4e79-b499-bd2c0016d5e0")
 	)
 	(wire
 		(pts
@@ -3629,16 +3839,6 @@
 			(type default)
 		)
 		(uuid "e4f7a269-169e-490c-8d53-5b0418399461")
-	)
-	(wire
-		(pts
-			(xy 170.18 71.12) (xy 163.83 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e830aeae-3309-4855-8390-b65758200651")
 	)
 	(wire
 		(pts
@@ -3689,16 +3889,6 @@
 			(type default)
 		)
 		(uuid "f883b63b-5342-45be-9c1f-b8682069e178")
-	)
-	(wire
-		(pts
-			(xy 167.64 111.76) (xy 167.64 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe77a7db-3c3f-4ed2-a48c-9018443da242")
 	)
 	(global_label "3.3 V"
 		(shape input)
@@ -4036,6 +4226,84 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "R_USBC_DIV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0555b970-93c0-40c7-9300-67546f1cb362")
+		(property "Reference" "#PWR013"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6d55588-71b4-4182-bbfe-9106fb637d98")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5210,103 +5478,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Protection:TVS0500DRV")
-		(at 168.91 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b9ab9de-bfd7-4437-bcf7-36d6bb896ce6")
-		(property "Reference" "U11"
-			(at 172.72 128.2699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TVS0500DRV"
-			(at 172.72 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
-			(at 173.99 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tvs0500.pdf"
-			(at 166.37 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6"
-			(at 168.91 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "f8ee98b1-b21f-4eef-acc4-00326a7d7801")
-		)
-		(pin "3"
-			(uuid "ce061798-932f-424b-9aed-182dc3fc6806")
-		)
-		(pin "5"
-			(uuid "f7ef6782-d404-4473-983e-1f7fe94d2d0b")
-		)
-		(pin "6"
-			(uuid "5103ac31-f78b-408b-8810-53a2087c5c90")
-		)
-		(pin "4"
-			(uuid "c2f27889-0195-47df-a13e-24dba709fa54")
-		)
-		(pin "2"
-			(uuid "a6129268-d0b6-4ae3-8839-c4d3a037ac21")
-		)
-		(pin "1"
-			(uuid "8f29c089-0ea6-4114-be90-2ad393959484")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:FerriteBead_Small")
 		(at 72.39 41.91 0)
 		(unit 1)
@@ -5464,6 +5635,91 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "C_D_STM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TVSdiodeusb:ESD122DMXR")
+		(at 165.1 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "848df118-2d0f-4da0-b0ec-47b22572546f")
+		(property "Reference" "U10"
+			(at 185.42 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ESD122DMXR"
+			(at 185.42 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "DMX3_TEX"
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/esd122"
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8abbaa03-7c4f-4b7f-943c-c8c0fca4ac7f")
+		)
+		(pin "3"
+			(uuid "03f30271-5f3f-49c2-878f-1ff73bdd9b05")
+		)
+		(pin "1"
+			(uuid "d71a3236-bb09-4a1b-9b65-2c4acf17677e")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -5785,103 +6041,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:TVS0500DRV")
-		(at 187.96 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba73c57e-638e-4acb-aec6-01ece7d656ff")
-		(property "Reference" "U10"
-			(at 191.77 128.2699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TVS0500DRV"
-			(at 191.77 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
-			(at 193.04 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tvs0500.pdf"
-			(at 185.42 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Flat-Clamp Surge Protection Device. 5Vrwm, WSON-6"
-			(at 187.96 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "259dfec6-5281-4f99-80ea-f3ee3fbe9f59")
-		)
-		(pin "3"
-			(uuid "555c7a42-dcaa-45e1-a126-e3333c354819")
-		)
-		(pin "5"
-			(uuid "fb760c82-cee0-4079-b792-fb5c1d3585db")
-		)
-		(pin "6"
-			(uuid "3664d72b-8199-4e3c-a02e-5c3474c984af")
-		)
-		(pin "4"
-			(uuid "8f1e10cb-3e42-498c-9787-5d9ab689dded")
-		)
-		(pin "2"
-			(uuid "6b7207f4-26ad-4007-a40b-018285eb1871")
-		)
-		(pin "1"
-			(uuid "dbd8e493-8f6a-4689-89b4-6b1b3c5c0b52")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "U10")
 					(unit 1)
 				)
 			)

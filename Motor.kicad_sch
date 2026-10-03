@@ -846,6 +846,12 @@
 		)
 	)
 	(junction
+		(at 90.17 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dc80c7c-493f-4968-ae53-617cd8bed84c")
+	)
+	(junction
 		(at 69.85 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -895,13 +901,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 22.86) (xy 90.17 24.13)
+			(xy 90.17 13.97) (xy 90.17 16.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "149c9af5-bab4-4966-b672-0b961e9e99a0")
+	)
+	(wire
+		(pts
+			(xy 90.17 16.51) (xy 90.17 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c772bc-2972-4bb2-bd36-b8585cdb10e4")
 	)
 	(wire
 		(pts
@@ -925,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 22.86) (xy 62.23 31.75)
+			(xy 62.23 13.97) (xy 62.23 31.75)
 		)
 		(stroke
 			(width 0)
@@ -935,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 22.86) (xy 90.17 22.86)
+			(xy 62.23 13.97) (xy 90.17 13.97)
 		)
 		(stroke
 			(width 0)
@@ -1109,6 +1125,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 97.79 16.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24073c9e-ab7a-4a36-bb29-56a5cec5fe7e")
+		(property "Reference" "#PWR037"
+			(at 97.79 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44cac43c-e8fd-4b22-8773-5586fbd3db6c")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 87.63 20.32 0)
 		(unit 1)
@@ -1131,7 +1225,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "2.2uf"
 			(at 91.44 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1185,6 +1279,86 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
 					(reference "C_D_MOTOR_0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 93.98 16.51 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b9d9193-fe21-463a-8e0c-64362bcb6e6d")
+		(property "Reference" "C_D_MOTOR_2"
+			(at 93.98 8.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uf"
+			(at 93.98 11.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 15.5448 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 93.98 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7fb0f1a3-05dc-4699-8874-5de78891555c")
+		)
+		(pin "1"
+			(uuid "4b63edd6-2ece-4019-8857-32d99a08db27")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
+					(reference "C_D_MOTOR_2")
 					(unit 1)
 				)
 			)
