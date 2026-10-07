@@ -2234,7 +2234,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "r_shunt"
+		(property "Value" "68 mΩ (adc range 0)"
 			(at 91.948 26.924 0)
 			(show_name no)
 			(do_not_autoplace no)

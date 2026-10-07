@@ -3318,6 +3318,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Add button for nrst, connect vref -\ncheck stlink gpio\nconnect usb dn and dp so both orientations of usb work\n\n"
+		(exclude_from_sim no)
+		(at 86.106 16.764 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5dd8f44c-833e-42b8-a88a-29875f756b48")
+	)
 	(junction
 		(at 72.39 49.53)
 		(diameter 0)
@@ -3341,6 +3351,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c92c6e3-7b3a-4047-8b77-9ad285d814f6")
+	)
+	(junction
+		(at 135.89 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a0c555a-0b64-47ef-bf6a-b33745881c3e")
 	)
 	(junction
 		(at 115.57 130.81)
@@ -3739,6 +3755,16 @@
 			(type default)
 		)
 		(uuid "90910243-0564-47fd-81c2-374079279e5b")
+	)
+	(wire
+		(pts
+			(xy 134.62 104.14) (xy 135.89 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b51802-5c60-475e-aadf-22501c2a828d")
 	)
 	(wire
 		(pts

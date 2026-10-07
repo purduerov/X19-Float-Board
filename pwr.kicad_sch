@@ -1977,11 +1977,21 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "give enable 12 volts"
+		(exclude_from_sim no)
+		(at 64.008 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "93052a59-40d9-4f92-a2ef-1ab55a1a59f5")
+	)
 	(junction
-		(at 63.5 41.91)
+		(at 63.5 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "037fc254-45cc-47c3-a90d-e47a59c48f5a")
+		(uuid "043a09be-55bd-449f-8345-a15a527a9c5d")
 	)
 	(junction
 		(at 48.26 46.99)
@@ -1990,10 +2000,10 @@
 		(uuid "05b439f5-1eb0-4833-969a-1334700f7aa8")
 	)
 	(junction
-		(at 63.5 34.29)
+		(at 193.04 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "204682b8-e827-43ab-8464-de0608038863")
+		(uuid "44ece82c-06c3-4fe7-89c8-46c477169b95")
 	)
 	(junction
 		(at 109.22 52.07)
@@ -2006,12 +2016,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83506b28-029e-43bb-98e7-0ef0c4cd59ab")
-	)
-	(junction
-		(at 139.7 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8633b2df-d613-4ad6-8ef2-63d69dc371ef")
 	)
 	(junction
 		(at 199.39 29.21)
@@ -2049,10 +2053,6 @@
 		(color 0 0 0 0)
 		(uuid "fb32adb7-c48a-4338-9a79-c8dc49763c43")
 	)
-	(no_connect
-		(at 240.03 31.75)
-		(uuid "6da273cb-abbf-4b7c-b8de-a0544df479e5")
-	)
 	(wire
 		(pts
 			(xy 196.85 29.21) (xy 199.39 29.21)
@@ -2065,13 +2065,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 39.37) (xy 63.5 41.91)
+			(xy 63.5 34.29) (xy 63.5 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0954151d-5a82-4126-a198-944c9e23fc13")
+	)
+	(wire
+		(pts
+			(xy 63.5 34.29) (xy 68.58 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a46b663-273c-4ef6-bc50-35a366b3d963")
 	)
 	(wire
 		(pts
@@ -2145,26 +2155,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 36.83) (xy 139.7 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "474413e6-d232-44de-a974-9683e38e2556")
-	)
-	(wire
-		(pts
-			(xy 63.5 34.29) (xy 68.58 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "483e1b09-bf38-4561-ae8c-d839935e5f25")
-	)
-	(wire
-		(pts
 			(xy 144.78 36.83) (xy 148.59 36.83)
 		)
 		(stroke
@@ -2172,16 +2162,6 @@
 			(type default)
 		)
 		(uuid "5e689a58-1a87-4262-ba75-05eddaadf843")
-	)
-	(wire
-		(pts
-			(xy 138.43 39.37) (xy 138.43 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "635bca10-b44c-4e30-b492-2800dd8a0e57")
 	)
 	(wire
 		(pts
@@ -2202,6 +2182,16 @@
 			(type default)
 		)
 		(uuid "6e545b03-1658-4a50-80ac-e84490807bb3")
+	)
+	(wire
+		(pts
+			(xy 240.03 31.75) (xy 240.03 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e71cef2-808b-441d-a952-a1635023f7d6")
 	)
 	(wire
 		(pts
@@ -2265,6 +2255,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 39.37) (xy 193.04 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a974d739-cbfd-4511-82c4-83c554b483b8")
+	)
+	(wire
+		(pts
 			(xy 48.26 21.59) (xy 48.26 46.99)
 		)
 		(stroke
@@ -2285,6 +2285,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 39.37) (xy 193.04 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be809f77-efed-4c14-8e63-c59cd71188b2")
+	)
+	(wire
+		(pts
 			(xy 240.03 26.67) (xy 243.84 26.67)
 		)
 		(stroke
@@ -2302,6 +2312,16 @@
 			(type default)
 		)
 		(uuid "c016a688-6e9b-4463-bba0-0975f8d1fb8b")
+	)
+	(wire
+		(pts
+			(xy 193.04 26.67) (xy 199.39 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caaa3cd2-963c-44f8-ac21-43cfcf70b391")
 	)
 	(wire
 		(pts
@@ -2355,7 +2375,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 26.67) (xy 199.39 26.67)
+			(xy 190.5 26.67) (xy 193.04 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2382,6 +2402,16 @@
 			(type default)
 		)
 		(uuid "e345276e-698d-44ab-99cd-a015252c170f")
+	)
+	(wire
+		(pts
+			(xy 138.43 36.83) (xy 139.7 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e35381d5-8e93-42f5-b348-5b7bbf7dbafb")
 	)
 	(wire
 		(pts
@@ -2774,88 +2804,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 63.5 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fdedda0-0a9a-4e47-93d3-b90e9a93e376")
-		(property "Reference" "R_BUCK_D_0"
-			(at 66.04 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22k"
-			(at 66.04 45.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 63.5 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "357fee55-c366-4979-a8a1-07e83bff8479")
-		)
-		(pin "2"
-			(uuid "eefc276a-846b-4bc3-99d0-cffe2e68fbd3")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
-					(reference "R_BUCK_D_0")
 					(unit 1)
 				)
 			)
@@ -3852,7 +3800,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "10k"
 			(at 110.744 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4164,7 +4112,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 36.83 0)
+		(at 138.43 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4174,7 +4122,7 @@
 		(dnp no)
 		(uuid "9ef2001c-52cb-45d9-94e4-b4c77848243a")
 		(property "Reference" "#PWR022"
-			(at 139.7 43.18 0)
+			(at 138.43 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4185,7 +4133,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 40.64 0)
+			(at 138.43 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4195,7 +4143,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 36.83 0)
+			(at 138.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4206,7 +4154,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 36.83 0)
+			(at 138.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4217,7 +4165,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 36.83 0)
+			(at 138.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4315,88 +4263,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
 					(reference "C_BUCK_D_0")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 63.5 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0b6ac2e-d463-488e-8334-91d7dd51cf63")
-		(property "Reference" "R_BUCK_D_1"
-			(at 66.04 35.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "68k"
-			(at 66.04 38.0999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 63.5 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "26ccfb7c-5773-4825-971f-e71c16c6e90c")
-		)
-		(pin "2"
-			(uuid "2d11dade-4b48-48b1-aa37-7f4746dc8b03")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
-					(reference "R_BUCK_D_1")
 					(unit 1)
 				)
 			)
@@ -4912,7 +4778,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "33.2k"
 			(at 112.268 50.292 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4965,84 +4831,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
 					(reference "R_BUCK_D_3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb8a2bb8-bb20-4d18-b988-5fc27b0cb6fe")
-		(property "Reference" "#PWR04"
-			(at 63.5 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f492896e-3515-4df3-ac75-cc96628892b8")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
