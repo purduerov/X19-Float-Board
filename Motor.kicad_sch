@@ -846,6 +846,12 @@
 		)
 	)
 	(junction
+		(at 90.17 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bf17067-b0e1-45b0-ab10-1f223354f7dd")
+	)
+	(junction
 		(at 69.85 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -864,10 +870,6 @@
 	(no_connect
 		(at 95.25 49.53)
 		(uuid "44a62e18-2cf6-41db-b3b0-1b6278359c6c")
-	)
-	(no_connect
-		(at 82.55 54.61)
-		(uuid "560ae75d-87c1-4b38-8558-c3348c9f130c")
 	)
 	(no_connect
 		(at 95.25 36.83)
@@ -895,16 +897,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 22.86) (xy 90.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "149c9af5-bab4-4966-b672-0b961e9e99a0")
-	)
-	(wire
-		(pts
 			(xy 69.85 46.99) (xy 69.85 49.53)
 		)
 		(stroke
@@ -925,7 +917,17 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 22.86) (xy 62.23 31.75)
+			(xy 90.17 13.97) (xy 90.17 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59719a20-e42b-4f35-b6fe-78b184d7d443")
+	)
+	(wire
+		(pts
+			(xy 62.23 13.97) (xy 62.23 31.75)
 		)
 		(stroke
 			(width 0)
@@ -935,7 +937,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 22.86) (xy 90.17 22.86)
+			(xy 62.23 13.97) (xy 90.17 13.97)
 		)
 		(stroke
 			(width 0)
@@ -965,6 +967,36 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 16.51) (xy 90.17 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b69291bf-bb20-4691-b6f3-7143c80905f5")
+	)
+	(wire
+		(pts
+			(xy 118.11 16.51) (xy 111.76 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d26fe0a6-7baa-4e37-b46b-6fc920447b00")
+	)
+	(wire
+		(pts
+			(xy 90.17 16.51) (xy 90.17 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8db5296-f03a-4c33-9b9e-9122d83b1183")
+	)
+	(wire
+		(pts
 			(xy 95.25 44.45) (xy 99.06 44.45)
 		)
 		(stroke
@@ -975,7 +1007,7 @@
 	)
 	(global_label "12 V"
 		(shape input)
-		(at 90.17 24.13 0)
+		(at 90.17 13.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -985,7 +1017,7 @@
 		)
 		(uuid "ae902b05-4adf-47e6-8f39-4d1df3b33352")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.6304 24.13 0)
+			(at 97.6304 13.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1109,6 +1141,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 118.11 16.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24073c9e-ab7a-4a36-bb29-56a5cec5fe7e")
+		(property "Reference" "#PWR037"
+			(at 118.11 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44cac43c-e8fd-4b22-8773-5586fbd3db6c")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 87.63 20.32 0)
 		(unit 1)
@@ -1131,7 +1241,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "2.2uf"
 			(at 91.44 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1185,6 +1295,86 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
 					(reference "C_D_MOTOR_0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 107.95 16.51 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b9d9193-fe21-463a-8e0c-64362bcb6e6d")
+		(property "Reference" "C_D_MOTOR_2"
+			(at 107.95 8.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uf"
+			(at 107.95 11.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 15.5448 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 107.95 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7fb0f1a3-05dc-4699-8874-5de78891555c")
+		)
+		(pin "1"
+			(uuid "4b63edd6-2ece-4019-8857-32d99a08db27")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
+					(reference "C_D_MOTOR_2")
 					(unit 1)
 				)
 			)
@@ -1473,6 +1663,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 82.55 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d08dafe7-1686-4f5c-b017-49c4af601317")
+		(property "Reference" "#PWR040"
+			(at 82.55 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 82.55 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 82.55 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5435739f-345e-4a05-bf65-64731928dce3")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/9d43548c-72e6-48dc-8947-3d07e1d2f4c8"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 66.04 31.75 90)
 		(unit 1)
@@ -1494,7 +1762,7 @@
 				)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "10nf"
 			(at 66.04 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
