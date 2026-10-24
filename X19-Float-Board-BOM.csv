@@ -1,0 +1,58 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,Manufacturer,MPN,DigiKey,Temp_Range,Category,Verified,MF,Package,Price,Check_prices,STANDARD,PARTREV,SnapEDA_Link,MP,Purchase-URL,Availability,SNAPEDA_PN,Sim.Pins
+1,"Unpolarized capacitor, small symbol",C_Small,C11,10nf,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+2,"Unpolarized capacitor, small symbol",C_Small,C8 C10 C_INA_D1,100nf,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3, ,,,,,,,,,,,,,,,,,,,
+3,"Unpolarized capacitor, small symbol",C_Small,C1 C2,1uF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2, ,,,,,,,,,,,,,,,,,,,
+4,"Unpolarized capacitor, small symbol",C_Small,C_BUCK_D_0,.1uF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+5,"Unpolarized capacitor, small symbol",C_Small,C_BUCK_D_1 C_BUCK_D_2,22uF,C_1210_3225Metric_Pad1.33x2.70mm_HandSolder,2, ,,,,,,,,,,,,,,,,,,,
+6,"Unpolarized capacitor, small symbol",C_Small,C_BUCK_VBST1,0.1 uF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+7,"Unpolarized capacitor, small symbol",C_Small,C_D_DEPTH1 C_D_RF1 C_D_STM2 C_D_STM3 C_D_SWITCH1 C_D_SWITCH2,100nF,C_0603_1608Metric,6, ,,,,,,,,,,,,,,,,,,,
+8,Unpolarized capacitor,C,C_D_MOTOR_2,10uf,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+9,Unpolarized capacitor,C,C_D_MOTOR_3,47uf,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+10,"Unpolarized capacitor, small symbol",C_Small,C_D_PWR_3.3 C_D_PWR_12 C_D_PWR_13,4.7µF,C_0603_1608Metric,3, ,,,,,,,,,,,,,,,,,,,
+11,"Unpolarized capacitor, small symbol",C_Small,C_D_STM4,2.2uF,C_0603_1608Metric,1, ,,,,,,,,,,,,,,,,,,,
+12,Light emitting diode,LED,D2,PWR Indicator,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,1=K 2=A
+13,"Generic connector, single row, 01x04, script generated",Conn_01x04_Pin,DEPTH_CONN1 J2 J3,01x04,JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical,3, ,,,,,,,,,,,,,,,,,,,
+14,Fuse,Fuse,FUSE_PWR1,2A 12V PTC fuse,Fuse_1812_4532Metric,1, ,,,,,,,,,,,,,,,,,,,
+15,Type C USB 2.0 Connector,USB4220-03-1040-C_REVA,J1,USB4220-03-1040-C_REVA,GCT_USB4220-03-1040-C_REVA,1, ,,Global Connector Technology,,,,,,Global Connector Technology,None,None,https://www.snapeda.com/parts/USB4220-03-0880-C/Global+Connector+Technology/view-part/?ref=eda,Manufacturer Recommendations,A,https://www.snapeda.com/parts/USB4220-03-0880-C/Global+Connector+Technology/view-part/?ref=snap,USB4220-03-0880-C,https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=16035066&manufacturer=Global Connector Technology&part_name=USB4220-03-0880-C&search_term=usb4220-03-0880-c,In Stock,USB4220-03-0880-C,
+16,"Inductor, small symbol",L_Small,L_BUCK1,3.3uH,,1, ,,,,,,,,,,,,,,,,,,,
+17,"Generic connector, single row, 01x02, script generated",Conn_01x02_Pin,MOTOR_CONN1,MOTOR_CONN2,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1, ,,,,,,,,,,,,,,,,,,,
+18,"Resistor, US symbol",R_US,R1,1 mΩ,R_2512_6332Metric_Pad1.40x3.35mm_HandSolder,1, ,,,,,,,,,,,,,,,,,,,
+19,"Resistor, small US symbol",R_Small_US,R12 R17 R18 R19 R20 R_BUCK_D_2,10k,,6, ,,,,,,,,,,,,,,,,,,,
+20,"Resistor, US symbol",R_US,R2,10k,,1, ,,,,,,,,,,,,,,,,,,,
+21,Photoresistor,R_Photo,R13,Generic Photoresistor,,1, ,,,,,,,,,,,,,,,,,,,
+22,"Resistor, small US symbol",R_Small_US,R_BUCK_D_3,33.2k,,1, ,,,,,,,,,,,,,,,,,,,
+23,"Resistor, small US symbol",R_Small_US,R_PD_USBC_1,5.1k,R_0603_1608Metric,1, ,,,,,,,,,,,,,,,,,,,
+24,"Resistor, small US symbol",R_Small_US,R_PD_USBC_2,5.1kΩ,R_0603_1608Metric,1, ,,,,,,,,,,,,,,,,,,,
+25,"Resistor, small US symbol",R_Small_US,R_PU_SWITCH1 R_PU_SWITCH2 R_USBC_DIV2,10kΩ,R_0603_1608Metric,3, ,,,,,,,,,,,,,,,,,,,
+26,"Resistor, small US symbol",R_Small_US,R_TPS_D_0,15k,,1, ,,,,,,,,,,,,,,,,,,,
+27,"Resistor, small US symbol",R_Small_US,R_TPS_LED1,1k,,1, ,,,,,,,,,,,,,,,,,,,
+28,"Resistor, small US symbol",R_Small_US,R_USBC_DIV1,20kΩ,R_0603_1608Metric,1, ,,,,,,,,,,,,,,,,,,,
+29,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,SCREW_PWR1,01x02,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1, ,,,,,,,,,,,,,,,,,,,
+30,,EG1218,SW1 SW2,EG1218,EG_1218_EWI,2, ,EG1218,,,,,,,,,,,,,,,,,,
+31,,rfm95adafruitmodule,U1,,rf module,1, ,,,,,,,,,,,,,,,,,,,
+32,,DRV8231DDAR,U4,DRV8231DDAR,DDA0008J-IPC_A,1, ,https://www.ti.com/lit/gpn/drv8231,,,,,,,,,,,,,,,,,,
+33,,ESD122DMXR,U10,ESD122DMXR,DMX3_TEX,1, ,https://www.ti.com/lit/gpn/esd122,,,,,,,,,,,,,,,,,,
+34,"85V, 16-Bit, High-Precision Current/Voltage/Power Monitor with I2C",INA237AIDGSR,U3,INA237AIDGSR,VSSOP_IDGSR_TEX,1, ,https://www.ti.com/lit/ds/symlink/ina237.pdf,Texas Instruments,INA237AIDGSR,296-INA237AIDGSRCT-ND,-40°C to 125°C,Sensors,Yes,,,,,,,,,,,,
+35,300mA Single LDO Regulator 3.3V Output SOT-23-5,MIC5504-3.3YM5-TR,U11,MIC5504-3.3YM5-TR,SOT-23-5_MC_MCH,1, ,https://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X-300mA-Single-LDO-DS20006584A.pdf,Microchip Technology,MIC5504-3.3YM5-TR,576-4763-1-ND,-40°C to 125°C,Power,Yes,,,,,,,,,,,,
+36,"ARM Cortex-M33 32-bit MCU+FPU, 144MHz, 256KB Flash, 64KB RAM, LQFP-48",STM32C542CCT6,U2,STM32C542CCT6,LQFP48-7X7,1, ,https://www.st.com/resource/en/datasheet/stm32c542cc.pdf,STMicroelectronics,STM32C542CCT6,https://www.digikey.com/en/products/detail/stmicroelectronics/STM32C542CCT6/28948246,-40°C to 125°C,Logic,,,,,,,,,,,,,
+37,,TMP1075NDRLR,U6,TMP1075NDRLR,SOT5X3-6_DRL_TEX,1, ,https://www.ti.com/lit/gpn/tmp1075,,,,,,,,,,,,,,,,,,
+38,"1-Channel ESD Protection for Super-Speed USB 3.0 Interface, X1SON-2",TPD1E05U06DPY,U8,TPD1E05U06DPY,Texas_DPY0002A_0.6x1mm_P0.65mm,1, ,https://www.ti.com/lit/ds/symlink/tpd1e05u06.pdf,,,,,,,,,,,,,,,,,,
+39,"2 Channnels Power Mux with Manual and Priority Switchover, 1.6-5.5V Input Voltage, 2.5A Output Current, Ron 40 mOhm, SOT-583-8",TPS2116DRL,U7,TPS2116DRL,SOT-583-8,1, ,https://www.ti.com/lit/ds/symlink/tps2116.pdf,,,,,,,,,,,,,,,,,,
+40,,TPS561208DDCR,U5,TPS561208DDCR,DDC0006A_N,1, ,https://www.ti.com/lit/gpn/tps561208,,,,,,,,,,,,,,,,,,
+
+
+
+
+
+Project info:
+Schematic:,X19-Float-Board
+Variant:,default
+Revision:,
+Date:,2026-10-24_18-00-48
+KiCad Version:,10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1
+Statistics:
+Component Groups:,40
+Component Count:,61
+Fitted Components:,61
+Number of PCBs:,1
+Total Components:,61
