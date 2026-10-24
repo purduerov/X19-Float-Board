@@ -424,173 +424,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:FerriteBead_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FB"
-				(at 1.905 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "FerriteBead_Small"
-				(at 1.905 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Ferrite bead, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FerriteBead_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.889) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_Photo"
 			(pin_numbers
 				(hide yes)
@@ -1077,28 +910,28 @@
 		)
 	)
 	(junction
-		(at 25.4 88.9)
+		(at 30.48 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "012b7a68-50e6-42ce-9e24-5a59fa493b5b")
+		(uuid "1fa34442-5f7f-49cb-95f2-627ba8551b95")
 	)
 	(junction
-		(at 30.48 88.9)
+		(at 25.4 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04c1c8e0-a9e0-4dc2-9e90-746fea948a5e")
-	)
-	(junction
-		(at 25.4 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cd83d4b-e1d0-44d8-8f6c-d3c4aeb06f44")
+		(uuid "3047ccf7-cd17-4c1c-aeda-bfe0b06fe9e6")
 	)
 	(junction
 		(at 50.8 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbad107e-44bf-44dd-a4c8-c4d607eac9f2")
+	)
+	(junction
+		(at 25.4 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcf0a088-367d-4f9f-95ad-0a31c531a87a")
 	)
 	(wire
 		(pts
@@ -1112,17 +945,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 88.9) (xy 30.48 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fc6d3cc-6a8f-4506-8f06-10907ca57fd1")
-	)
-	(wire
-		(pts
-			(xy 25.4 88.9) (xy 30.48 88.9)
+			(xy 25.4 85.09) (xy 30.48 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1142,13 +965,33 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 88.9) (xy 30.48 88.9)
+			(xy 25.4 93.98) (xy 25.4 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50ea6464-784e-49ec-99a7-28c04dc77613")
+	)
+	(wire
+		(pts
+			(xy 50.8 85.09) (xy 30.48 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6473ee99-9e61-4b0e-85a9-264483365b5c")
+	)
+	(wire
+		(pts
+			(xy 30.48 85.09) (xy 30.48 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78dc8bae-877e-4c0e-8276-464816951e64")
 	)
 	(wire
 		(pts
@@ -1162,13 +1005,23 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 93.98) (xy 25.4 95.25)
+			(xy 50.8 85.09) (xy 50.8 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99134b4b-898d-4748-bba3-d6b49d787164")
+		(uuid "9c11cea3-15eb-44be-ac99-a0a0eaefe427")
+	)
+	(wire
+		(pts
+			(xy 30.48 93.98) (xy 30.48 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89efa9d-fd2f-4fac-bdba-df59a174cb4f")
 	)
 	(wire
 		(pts
@@ -1179,6 +1032,36 @@
 			(type default)
 		)
 		(uuid "c27d51ce-87d0-43d7-b80b-cd770a9b4c16")
+	)
+	(wire
+		(pts
+			(xy 25.4 74.93) (xy 25.4 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b4aabd-1afe-456f-aa38-2eef3c61f8b4")
+	)
+	(wire
+		(pts
+			(xy 25.4 85.09) (xy 25.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e646c7ea-acc4-4847-b897-73702a231c16")
+	)
+	(wire
+		(pts
+			(xy 25.4 93.98) (xy 25.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6750b04-24cc-4a90-8856-36acd1669634")
 	)
 	(wire
 		(pts
@@ -1216,7 +1099,7 @@
 	)
 	(global_label "3.3 V"
 		(shape input)
-		(at 25.4 83.82 180)
+		(at 25.4 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1226,7 +1109,7 @@
 		)
 		(uuid "1d5d2900-808f-4d3f-b174-1d264d6ca4d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.3348 83.82 0)
+			(at 17.3348 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1511,7 +1394,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 91.44 0)
+		(at 25.4 90.17 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1519,10 +1403,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6f8d6399-ddd6-4b9b-a836-f1f4e96523df")
 		(property "Reference" "C10"
-			(at 27.94 90.1762 0)
+			(at 22.86 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1533,7 +1416,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 27.94 92.7162 0)
+			(at 22.86 91.4462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1543,8 +1426,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 25.4 91.44 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 25.4 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1555,7 +1438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 91.44 0)
+			(at 25.4 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1566,7 +1449,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 25.4 91.44 0)
+			(at 25.4 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1755,88 +1638,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 25.4 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bac934d2-1a0a-401d-8b9a-7a9049ad9f56")
-		(property "Reference" "FB2"
-			(at 27.94 85.0518 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FerriteBead_Small"
-			(at 27.94 87.5918 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 23.622 86.36 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 25.4 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f018a9b-c31c-46e3-b5a9-10b9c59ba1d0")
-		)
-		(pin "2"
-			(uuid "f6753a08-ce04-420b-a82f-772df35d5b54")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/5f356ab3-657b-42f3-9a8b-ebc79580ebf5"
-					(reference "FB2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 59.69 22.86 180)
 		(unit 1)
@@ -1919,7 +1720,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 30.48 91.44 0)
+		(at 30.48 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1930,7 +1731,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2d6d7e7-8c08-4ac8-830e-520192ee6cba")
 		(property "Reference" "C11"
-			(at 33.02 90.1762 0)
+			(at 33.02 88.9062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1941,7 +1742,7 @@
 			)
 		)
 		(property "Value" "10nf"
-			(at 33.02 92.7162 0)
+			(at 33.02 91.4462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1951,8 +1752,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 30.48 91.44 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 30.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1963,7 +1764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 91.44 0)
+			(at 30.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1974,7 +1775,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 30.48 91.44 0)
+			(at 30.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

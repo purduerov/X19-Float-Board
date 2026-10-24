@@ -161,10 +161,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Shunt_US"
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -172,7 +174,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at -5.08 0 90)
+				(at 2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -181,8 +183,8 @@
 					)
 				)
 			)
-			(property "Value" "R_Shunt_US"
-				(at -3.048 0 90)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -192,7 +194,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -213,7 +215,7 @@
 					)
 				)
 			)
-			(property "Description" "Shunt resistor with Kelvin connections, US symbol"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -224,7 +226,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res shunt resistor"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -235,7 +237,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*Shunt*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -246,7 +248,7 @@
 					)
 				)
 			)
-			(symbol "R_Shunt_US_1_1"
+			(symbol "R_US_0_1"
 				(polyline
 					(pts
 						(xy 0 2.286) (xy 0 2.54)
@@ -307,33 +309,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "R_US_1_1"
 				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
+					(at 0 3.81 270)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -350,7 +330,7 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 2.54 180)
+					(at 0 -3.81 90)
 					(length 1.27)
 					(name ""
 						(effects
@@ -360,42 +340,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1173,52 +1117,52 @@
 		)
 	)
 	(junction
-		(at 93.98 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32facac8-a4f6-4e88-a358-cd63f006cc07")
-	)
-	(junction
-		(at 93.98 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8586d6c9-d382-4d9e-8fa0-62317ce2cd57")
-	)
-	(junction
 		(at 35.56 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d4799cb-c8dc-4c2d-a3d1-3d6c19d54e31")
 	)
 	(junction
-		(at 78.74 25.4)
+		(at 93.98 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d25ff8f6-9baf-4f7f-bd93-c8f05fc8b49a")
+		(uuid "a606b858-261d-43a7-9f7e-4ca1c47232a0")
+	)
+	(junction
+		(at 93.98 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb08b0cd-c808-4459-9307-474972ed222c")
+	)
+	(junction
+		(at 78.74 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebd10b5c-1386-4467-a461-3e06f1105ee3")
 	)
 	(wire
 		(pts
-			(xy 109.22 21.59) (xy 109.22 24.13)
+			(xy 78.74 27.94) (xy 78.74 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a373d7a-68cf-4c7b-b03d-5f602432afd1")
+		(uuid "004dbcef-2eaf-4c2d-8161-46f8e26636e5")
 	)
 	(wire
 		(pts
-			(xy 78.74 30.48) (xy 78.74 25.4)
+			(xy 78.74 27.94) (xy 88.9 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "18f0b63c-22c4-4837-b18f-99dd5d8925cc")
+		(uuid "0b5151ae-84c1-4f05-88e5-9d333df69256")
 	)
 	(wire
 		(pts
-			(xy 76.2 25.4) (xy 78.74 25.4)
+			(xy 76.2 25.4) (xy 88.9 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1238,6 +1182,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 30.48) (xy 93.98 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecd3cef-4a4d-4f9e-81eb-0b4b49a8bd84")
+	)
+	(wire
+		(pts
 			(xy 26.67 30.48) (xy 35.56 30.48)
 		)
 		(stroke
@@ -1245,6 +1199,16 @@
 			(type default)
 		)
 		(uuid "3056b6b4-a70e-498a-bdf8-3cfd9a85f4e9")
+	)
+	(wire
+		(pts
+			(xy 93.98 19.05) (xy 93.98 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36d58c9a-9f5c-4a4d-9906-d332f41ba570")
 	)
 	(wire
 		(pts
@@ -1278,16 +1242,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 31.75) (xy 88.9 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "553081d4-c836-4da0-9f89-0e7232da0a77")
-	)
-	(wire
-		(pts
 			(xy 19.05 68.58) (xy 34.29 68.58)
 		)
 		(stroke
@@ -1308,16 +1262,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 29.21) (xy 109.22 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "843b0fbd-89a3-4a78-b8c8-8150845b07e6")
-	)
-	(wire
-		(pts
 			(xy 33.02 66.04) (xy 34.29 66.04)
 		)
 		(stroke
@@ -1328,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 21.59) (xy 109.22 21.59)
+			(xy 88.9 21.59) (xy 93.98 21.59)
 		)
 		(stroke
 			(width 0)
@@ -1368,6 +1312,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 31.75) (xy 93.98 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c21a1534-5668-43ce-b80a-044072913fc9")
+	)
+	(wire
+		(pts
 			(xy 35.56 25.4) (xy 35.56 27.94)
 		)
 		(stroke
@@ -1378,17 +1332,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 25.4) (xy 78.74 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0ead70f-1de1-4b88-9036-efcc61962660")
-	)
-	(wire
-		(pts
-			(xy 109.22 31.75) (xy 93.98 31.75)
+			(xy 88.9 31.75) (xy 93.98 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1398,17 +1342,17 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 21.59) (xy 88.9 21.59)
+			(xy 93.98 21.59) (xy 93.98 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f405cc04-a287-49d6-817f-059ed08a85c1")
+		(uuid "e9e57f4f-358d-4da2-baa7-ad0a5af447af")
 	)
 	(wire
 		(pts
-			(xy 76.2 27.94) (xy 88.9 27.94)
+			(xy 76.2 27.94) (xy 78.74 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1488,7 +1432,7 @@
 	)
 	(hierarchical_label "12 V Low"
 		(shape output)
-		(at 96.52 29.21 0)
+		(at 93.98 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1521,7 +1465,7 @@
 	)
 	(hierarchical_label "12 V High"
 		(shape input)
-		(at 96.52 24.13 0)
+		(at 93.98 19.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1641,88 +1585,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 109.22 26.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ce924bb-874f-4c28-b1fe-f2b092dfae41")
-		(property "Reference" "C_INA_Curr"
-			(at 111.76 25.4062 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nf"
-			(at 111.76 27.9462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b588919d-c37b-41ed-a898-af6bb31fb10f")
-		)
-		(pin "2"
-			(uuid "83bce872-3c04-476d-b1ab-0d389c4d3660")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
-					(reference "C_INA_Curr")
 					(unit 1)
 				)
 			)
@@ -2135,6 +1997,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 93.98 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c35adffe-501e-447f-b9d3-4c276672bb12")
+		(property "Reference" "R1"
+			(at 96.52 25.3999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 mΩ"
+			(at 96.52 27.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 94.996 26.924 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 93.98 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edc6f54e-bb00-4a78-949d-ae97958c0015")
+		)
+		(pin "2"
+			(uuid "597d2574-92de-4494-bac0-6ff8ffcde663")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 33.02 0)
 		(unit 1)
@@ -2213,93 +2158,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Shunt_US")
-		(at 93.98 26.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c9e70229-bf17-410d-8149-1cfad70b6749")
-		(property "Reference" "R_Shunt_INA"
-			(at 91.948 24.892 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "68 mΩ (adc range 0)"
-			(at 91.948 26.924 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.202 26.67 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
-			(at 93.98 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "66cfd34f-9d70-411a-bdcc-336b42a987b9")
-		)
-		(pin "4"
-			(uuid "5226cc33-62f1-4458-ae5d-3cb1f404f485")
-		)
-		(pin "3"
-			(uuid "bccae06c-1685-4411-82d2-1efce97da167")
-		)
-		(pin "2"
-			(uuid "03ebcee1-5536-481f-894f-f8c85d698366")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
-					(reference "R_Shunt_INA")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 76.2 38.1 0)
 		(unit 1)
@@ -2310,7 +2168,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cfc56cc3-193f-4ac8-a88d-b228d66bd9be")
-		(property "Reference" "C_INA_D"
+		(property "Reference" "C_INA_D1"
 			(at 66.294 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2332,7 +2190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 76.2 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -2374,7 +2232,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
-					(reference "C_INA_D")
+					(reference "C_INA_D1")
 					(unit 1)
 				)
 			)
