@@ -1528,7 +1528,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT5X3-6_DRL_TEX"
+		(property "Footprint" "CustomFootprints:SOT5X3-6_DRL_TEX"
 			(at 34.29 66.04 0)
 			(hide yes)
 			(show_name no)

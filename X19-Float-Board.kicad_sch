@@ -1892,7 +1892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 97.79 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2052,7 +2052,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 109.22 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2133,7 +2133,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 120.65 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -2303,7 +2303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 90.17 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2385,7 +2385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 105.41 99.06 0)
 			(hide yes)
 			(show_name no)

@@ -622,12 +622,138 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey",
+          "name": "DigiKey",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Temp_Range",
+          "name": "Temp_Range",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Verified",
+          "name": "Verified",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -672,7 +798,7 @@
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "R_TPS_LED1,C_INA_D1,NMOS_MOTOR1,C_D_MOTOR_1-3,D_PWR1,L_BUCK1,C_D_RF1,R_PD_MOTOR1,C_D_MOTOR1,D2,FB1-2,C1-12,10kΩ1,U2-11,MOTOR_CONN1,SCREW_PWR1,SW1-3,R_USBC_DIV1-2,DEPTH_CONN1,C_D_SWITCH1-2,L_PWR1,R_PU_SWITCH1-2,C_BUCK_VBST1,1,C_D_DEPTH1,C_D_PWR_12-13,R_PWM_MOTOR1,C_D_STM1-4,usb_c1,5.1kΩ1,FUSE_PWR1,L1,R_PD_USBC_1-2,20kΩ1,R1-20,#PWR2-14,#PWR18-46,J1-4",
+    "used_designators": "C_D_MOTOR1,C_INA_D1,Q1,R_TPS_LED1,NMOS_MOTOR1,C_D_MOTOR_1-3,C_D_RF1,L_BUCK1,D_PWR1,R_BUCK_D_4,R_PD_MOTOR1,D2,FB1-2,C1-12,10kΩ1,U2-11,MOTOR_CONN1,SCREW_PWR1,SW1-3,R_USBC_DIV1-2,DEPTH_CONN1,C_D_SWITCH1-2,L_PWR1,R_PU_SWITCH1-2,C_BUCK_VBST1,1,C_D_DEPTH1,C_D_PWR_12-13,R_PWM_MOTOR1,C_D_STM1-4,usb_c1,5.1kΩ1,FUSE_PWR1,L1,R_PD_USBC_1-2,20kΩ1,R1-20,#PWR2-14,#PWR18-46,J1-4",
     "variants": []
   },
   "sheets": [
