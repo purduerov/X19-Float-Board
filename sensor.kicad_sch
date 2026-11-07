@@ -1583,7 +1583,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_Hirose:Hirose_DF13-04P-1.25DS_1x04_P1.25mm_Horizontal"
 			(at 32.385 17.78 0)
 			(hide yes)
 			(show_name no)

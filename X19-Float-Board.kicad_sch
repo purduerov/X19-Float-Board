@@ -777,12 +777,6 @@
 		(uuid "b2cf1b55-e865-48bc-bc39-274626e117b2")
 	)
 	(junction
-		(at 160.02 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5987e48-465e-46c9-8ef2-45d7ad779bd6")
-	)
-	(junction
 		(at 55.88 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -793,12 +787,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5740dd2-c635-4ca8-b84e-547276930c60")
-	)
-	(junction
-		(at 101.6 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9de6c6d-26d8-4e53-b0da-58f18d846c66")
 	)
 	(junction
 		(at 100.33 63.5)
@@ -994,17 +982,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 99.06) (xy 101.6 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34141477-9049-4cb3-9056-3ab21334a5f7")
-	)
-	(wire
-		(pts
-			(xy 101.6 85.09) (xy 55.88 85.09)
+			(xy 55.88 85.09) (xy 110.49 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1064,16 +1042,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 85.09) (xy 101.6 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5502e27c-0834-4bb5-bafb-62ee19df891b")
-	)
-	(wire
-		(pts
 			(xy 160.02 63.5) (xy 184.15 63.5)
 		)
 		(stroke
@@ -1114,16 +1082,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 35.56) (xy 184.15 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bff2f84-df19-46c5-a202-1d17fb9c1eb9")
-	)
-	(wire
-		(pts
 			(xy 90.17 101.6) (xy 97.79 101.6)
 		)
 		(stroke
@@ -1131,16 +1089,6 @@
 			(type default)
 		)
 		(uuid "6cdffdf5-e2c2-4071-85a4-9e4083a1e6f3")
-	)
-	(wire
-		(pts
-			(xy 123.19 106.68) (xy 123.19 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77d7cf12-3da9-4dce-b06d-416d22cdd14e")
 	)
 	(wire
 		(pts
@@ -1394,16 +1342,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 101.6 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de721838-c89f-459c-a5de-066ae99b92bf")
-	)
-	(wire
-		(pts
 			(xy 86.36 63.5) (xy 100.33 63.5)
 		)
 		(stroke
@@ -1411,6 +1349,16 @@
 			(type default)
 		)
 		(uuid "e4b81054-cf89-4a3d-8b3d-c45079ef1637")
+	)
+	(wire
+		(pts
+			(xy 123.19 104.14) (xy 123.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a611a8-8a8e-4b2c-bd0a-39b43c820605")
 	)
 	(wire
 		(pts
@@ -1471,6 +1419,30 @@
 			(type default)
 		)
 		(uuid "f80399a1-404e-4d5a-a22b-a822aad58ed3")
+	)
+	(global_label "3.3 V"
+		(shape input)
+		(at 123.19 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1e222dd7-397e-47a5-b896-333aee49826c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.2552 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(global_label "3.3 V"
 		(shape input)
@@ -2775,16 +2747,6 @@
 				(justify left)
 			)
 		)
-		(pin "Motor Sleep" input
-			(at 184.15 35.56 180)
-			(uuid "eb5caa37-b365-4110-a5ce-f04ab5a2064f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b"
@@ -2859,16 +2821,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "MOTOR nSleep" input
-			(at 160.02 35.56 0)
-			(uuid "6ab66a88-8fc3-43c3-a4c3-6c669cc21684")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "Motor PWM 1" output
