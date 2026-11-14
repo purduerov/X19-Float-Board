@@ -3437,10 +3437,6 @@
 		(uuid "fbae7f65-9d75-4b6d-a1b3-77f30cccff48")
 	)
 	(no_connect
-		(at 163.83 45.72)
-		(uuid "04aba324-1b06-46e8-8e86-82e267fb6e4b")
-	)
-	(no_connect
 		(at 92.71 33.02)
 		(uuid "0a99ce3d-79e2-472e-a10e-3c6e16b0cb2b")
 	)
@@ -3507,6 +3503,10 @@
 	(no_connect
 		(at 210.82 45.72)
 		(uuid "b3490b99-9991-4474-8c5f-8013aefd6853")
+	)
+	(no_connect
+		(at 92.71 76.2)
+		(uuid "b4dadfe5-c401-4f18-9459-34d89bde3e42")
 	)
 	(no_connect
 		(at 92.71 40.64)
@@ -4020,6 +4020,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 143.51) (xy 161.29 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a13bf88d-bce8-4077-b1e6-cf22c47d2655")
+	)
+	(wire
+		(pts
 			(xy 166.37 139.7) (xy 166.37 143.51)
 		)
 		(stroke
@@ -4445,17 +4455,6 @@
 		)
 		(uuid "542e4455-9a37-46ff-a069-f66bf6026517")
 	)
-	(hierarchical_label "TMP Alert"
-		(shape input)
-		(at 92.71 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ea85277-2ba6-4e57-9f2f-5f6537ffd413")
-	)
 	(hierarchical_label "Motor PWM 2"
 		(shape output)
 		(at 163.83 76.2 0)
@@ -4467,6 +4466,17 @@
 		)
 		(uuid "77095147-c4c4-48cc-a04d-570e29e973e7")
 	)
+	(hierarchical_label "USB 5V"
+		(shape output)
+		(at 129.54 120.65 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "88d458c6-95f2-492e-b4c1-8abbeff0cfe2")
+	)
 	(hierarchical_label "Light Voltage"
 		(shape input)
 		(at 92.71 50.8 180)
@@ -4477,6 +4487,17 @@
 			(justify right)
 		)
 		(uuid "9af4205b-e025-4fe1-b720-b35744a1aa9b")
+	)
+	(hierarchical_label "TMP Alert"
+		(shape input)
+		(at 163.83 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9e3f3a8-ed04-4706-a810-113acce3027f")
 	)
 	(hierarchical_label "RF INT"
 		(shape input)
@@ -5744,7 +5765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "USB4105_GCT"
+		(property "Footprint" "CustomFootprints:USB4105_GCT"
 			(at 140.97 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -6491,7 +6512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SW_1218_EWI"
+		(property "Footprint" "CustomFootprints:EG_1218_EWI"
 			(at 220.98 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6899,7 +6920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DMX3_TEX"
+		(property "Footprint" "CustomFootprints:DMX3_TEX"
 			(at 229.87 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7310,7 +7331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SD-43650-006_02_MOL"
+		(property "Footprint" "CustomFootprints:CONN_SD-43650-006_02_MOL"
 			(at 140.97 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7392,7 +7413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SW_1218_EWI"
+		(property "Footprint" "CustomFootprints:EG_1218_EWI"
 			(at 35.56 29.21 0)
 			(hide yes)
 			(show_name no)

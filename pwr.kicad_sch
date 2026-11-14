@@ -3733,7 +3733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "242cce08-82a5-482c-aa4c-549e8dcd2fa3")
-		(property "Reference" "L_BUCK1"
+		(property "Reference" "L_BUCK4"
 			(at 114.3 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3753,9 +3753,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "CustomFootprints:DR1050"
 			(at 114.3 41.91 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3795,7 +3794,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
-					(reference "L_BUCK1")
+					(reference "L_BUCK4")
 					(unit 1)
 				)
 			)
@@ -4872,7 +4871,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DDC0006A_N"
+		(property "Footprint" "CustomFootprints:DDC0006A_N"
 			(at 86.36 44.45 0)
 			(hide yes)
 			(show_name no)
