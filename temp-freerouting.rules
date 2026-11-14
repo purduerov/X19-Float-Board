@@ -1,0 +1,30 @@
+(rules PCB temp-freerouting
+  (snap_angle
+    (fortyfive_degree)
+  )
+  (autoroute_settings
+    (autoroute on)
+    (postroute on)
+    (fanout off)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0 2.0)
+      (against_preferred_direction_trace_costs 2.5 5.0)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction none)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction none)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0 2.0)
+      (against_preferred_direction_trace_costs 2.5 5.0)
+    )
+  )
+)
