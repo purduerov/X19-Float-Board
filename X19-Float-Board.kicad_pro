@@ -530,14 +530,122 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_High",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_Logic",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "FinePitch_USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "12 V": [
+        "Power_High"
+      ],
+      "/PWR/12 V High": [
+        "Power_High"
+      ],
+      "Net-(MOTOR_CONN2-Pin_1)": [
+        "Power_High"
+      ],
+      "Net-(MOTOR_CONN2-Pin_2)": [
+        "Power_High"
+      ],
+      "Net-(Q1-D)": [
+        "Power_High"
+      ],
+      "Net-(SCREW_PWR1-Pin_2)": [
+        "Power_High"
+      ],
+      "Net-(U5-SW)": [
+        "Power_High"
+      ],
+      "3.3 V": [
+        "Power_Logic"
+      ],
+      "/PWR/USB C 5V": [
+        "Power_Logic"
+      ],
+      "Net-(MIC_VOUT1-VOUT)": [
+        "Power_Logic"
+      ],
+      "GND": [
+        "Power_Logic"
+      ],
+      "Net-(J6-DN1)": [
+        "FinePitch_USB"
+      ],
+      "Net-(J6-DP1)": [
+        "FinePitch_USB"
+      ],
+      "Net-(J6-CC1)": [
+        "FinePitch_USB"
+      ],
+      "Net-(J6-CC2)": [
+        "FinePitch_USB"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "FinePitch_USB",
+        "pattern": "unconnected-(J6-*)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -798,7 +906,7 @@
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "C_D_MOTOR1,C_INA_D1,Q1,R_TPS_LED1,NMOS_MOTOR1,C_D_MOTOR_1-3,C_D_RF1,L_BUCK1,D_PWR1,R_BUCK_D_4,R_PWR_SWITCH_PU1,R_PD_MOTOR1,D2,FB1-2,C1-12,10kΩ1,#FLG1-5,U2-11,SCREW_PWR1,MOTOR_CONN1-2,SW1-3,R_USBC_DIV1-3,DEPTH_CONN1,C_D_SWITCH1-2,L_PWR1,R_PU_SWITCH1-2,C_BUCK_VBST1,1,C_D_DEPTH1,C_D_PWR_12-13,R_PWM_MOTOR1,C_D_STM1-4,usb_c1,MIC_VOUT1,5.1kΩ1,FUSE_PWR1,L1,R_PD_USBC_1-3,20kΩ1,R1-20,#PWR2-14,#PWR18-46,J1-6",
+    "used_designators": "C_D_MOTOR1,C_INA_D1,Q1,R_TPS_LED1,NMOS_MOTOR1,C_D_MOTOR_1-3,C_D_RF1,L_BUCK1,D_PWR1,R_BUCK_D_4,R_PWR_SWITCH_PU1,R_PD_MOTOR1,D2,FB1-2,C1-12,10k\u03a91,#FLG1-5,U2-11,SCREW_PWR1,MOTOR_CONN1-2,SW1-3,R_USBC_DIV1-3,DEPTH_CONN1,C_D_SWITCH1-2,L_PWR1,R_PU_SWITCH1-2,C_BUCK_VBST1,1,C_D_DEPTH1,C_D_PWR_12-13,R_PWM_MOTOR1,C_D_STM1-4,usb_c1,MIC_VOUT1,5.1k\u03a91,FUSE_PWR1,L1,R_PD_USBC_1-3,20k\u03a91,R1-20,#PWR2-14,#PWR18-46,J1-6",
     "variants": []
   },
   "sheets": [

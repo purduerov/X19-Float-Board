@@ -10161,7 +10161,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
+			(layer "F.Fab")
 			(uuid "198cea26-95dd-4de9-868b-65fcc393fcaf")
 		)
 		(fp_line
@@ -10171,7 +10171,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
+			(layer "F.Fab")
 			(uuid "8d4b0f89-e876-4f28-b720-867794b7a07f")
 		)
 		(fp_line

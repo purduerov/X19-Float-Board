@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "USB_C_Diff_Pairs"
+  (constraint differential_pair (width 0.15mm) (gap 0.15mm))
+  (condition "A.NetClass == 'FinePitch_USB'")
+)
