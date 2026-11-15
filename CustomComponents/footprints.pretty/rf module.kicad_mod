@@ -208,4 +208,59 @@
 		(uuid "bc6bf03a-033b-401e-b028-c90a6d53e5ee")
 	)
 	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 0.538)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x09_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 -25.4 0)
+		)
+		(scale
+			(xyz 1 1 0.538)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 6.09)
+		)
+		(scale
+			(xyz 1 1 0.6)
+		)
+		(rotate
+			(xyz 180 0 90)
+		)
+	)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 -25.4 6.09)
+		)
+		(scale
+			(xyz 1 1 0.6)
+		)
+		(rotate
+			(xyz 180 0 90)
+		)
+	)
+	(model "${KIPRJMOD}/CustomComponents/RFM95W_v5.step"
+		(offset
+			(xyz -2.54 -27.94 6.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )

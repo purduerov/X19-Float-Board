@@ -1064,7 +1064,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "38.3k"
 			(at 168.91 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1074,7 +1074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 168.656 75.946 90)
 			(hide yes)
 			(show_name no)
@@ -1387,7 +1387,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MOTOR_CONN2"
+		(property "Value" "436500200"
 			(at 171.45 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1398,7 +1398,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 170.18 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1409,7 +1409,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/436500200?display=pdf"
 			(at 170.18 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1420,7 +1420,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "Molex Micro-Fit 3.0 2-pin right-angle PCB header (pump motor)"
 			(at 170.18 67.31 0)
 			(hide yes)
 			(show_name no)

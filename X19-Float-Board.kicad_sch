@@ -827,16 +827,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 35.56) (xy 160.02 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2a8149e-ef8c-491c-880c-949eaeaa9ae9")
-	)
-	(wire
-		(pts
 			(xy 85.09 101.6) (xy 90.17 101.6)
 		)
 		(stroke
@@ -1556,7 +1546,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 111.76 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1802,7 +1792,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 107.95 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,7 +2289,7 @@
 				(justify right)
 			)
 		)
-		(pin "PWR Alert" input
+		(pin "PWR ALERT" input
 			(at 110.49 67.31 180)
 			(uuid "6b507d06-1674-4660-a911-0a55133adc0d")
 			(effects

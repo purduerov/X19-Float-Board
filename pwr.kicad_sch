@@ -2683,12 +2683,6 @@
 		(uuid "d57b0371-549d-4b0e-8d5c-66617125e4ca")
 	)
 	(junction
-		(at 142.24 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f04f3886-d456-42d2-b530-a8e5fe5e6e90")
-	)
-	(junction
 		(at 44.45 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2713,16 +2707,6 @@
 			(type default)
 		)
 		(uuid "0954151d-5a82-4126-a198-944c9e23fc13")
-	)
-	(wire
-		(pts
-			(xy 142.24 39.37) (xy 148.59 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a31f056-c65b-4a70-9dfa-e5cd18d6f777")
 	)
 	(wire
 		(pts
@@ -2756,16 +2740,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 41.91) (xy 142.24 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cef56fb-17af-419c-96e4-c546259e14af")
-	)
-	(wire
-		(pts
 			(xy 52.07 46.99) (xy 52.07 34.29)
 		)
 		(stroke
@@ -2773,16 +2747,6 @@
 			(type default)
 		)
 		(uuid "18e3b0aa-da79-4099-a6de-b3427d2a8935")
-	)
-	(wire
-		(pts
-			(xy 146.05 20.32) (xy 146.05 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a0a2a89-eaaa-442b-8ab6-b6d4e332d19e")
 	)
 	(wire
 		(pts
@@ -2806,16 +2770,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 31.75) (xy 148.59 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30713b43-3e7a-44d6-8fa4-9cfb64cbb44f")
-	)
-	(wire
-		(pts
 			(xy 116.84 41.91) (xy 139.7 41.91)
 		)
 		(stroke
@@ -2833,16 +2787,6 @@
 			(type default)
 		)
 		(uuid "5e689a58-1a87-4262-ba75-05eddaadf843")
-	)
-	(wire
-		(pts
-			(xy 142.24 39.37) (xy 142.24 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "636197e5-4abc-4033-8e42-6e4296866cc3")
 	)
 	(wire
 		(pts
@@ -2896,16 +2840,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 41.91) (xy 142.24 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9367b632-5724-4832-9b2d-4bd514e658eb")
-	)
-	(wire
-		(pts
 			(xy 139.7 52.07) (xy 139.7 41.91)
 		)
 		(stroke
@@ -2933,16 +2867,6 @@
 			(type default)
 		)
 		(uuid "a974d739-cbfd-4511-82c4-83c554b483b8")
-	)
-	(wire
-		(pts
-			(xy 146.05 41.91) (xy 148.59 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa5bc157-7326-412e-bf3f-62ee204d83eb")
 	)
 	(wire
 		(pts
@@ -3415,7 +3339,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2A 12V PTC fuse"
+		(property "Value" "2A 24V PTC fuse"
 			(at 22.86 29.2099 0)
 			(hide yes)
 			(show_name no)
@@ -3584,7 +3508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 177.8 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3802,7 +3726,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 148.59 31.75 180)
+		(at 148.59 41.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3834,7 +3758,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 31.75 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3845,7 +3769,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 31.75 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3856,7 +3780,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 148.59 31.75 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4124,7 +4048,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector:Conn_01x02_Socket")
 		(at 17.78 19.05 90)
 		(unit 1)
 		(body_style 1)
@@ -4134,7 +4058,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38c18b8a-967f-4d70-9def-70d3e4bf7095")
-		(property "Reference" "SCREW_PWR1"
+		(property "Reference" "J5"
 			(at 28.448 20.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4144,7 +4068,7 @@
 				)
 			)
 		)
-		(property "Value" "01x02"
+		(property "Value" "436500200"
 			(at 25.146 18.288 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4154,7 +4078,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 2.286 22.098 0)
 			(hide yes)
 			(show_name no)
@@ -4165,7 +4089,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/436500200?display=pdf"
 			(at 17.78 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -4176,7 +4100,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex Micro-Fit 3.0 2-pin right-angle PCB header (12V battery input)"
 			(at 17.78 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -4196,7 +4120,7 @@
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
-					(reference "SCREW_PWR1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -5978,8 +5902,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMP3099L")
-		(at 22.86 36.83 0)
-		(mirror y)
+		(at 22.86 36.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6059,6 +5982,186 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 146.05 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bc02c11-2ff6-4ef4-8745-87e4d4052bc8")
+	)
+	(junction
+		(at 146.05 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a5a17ae-fe83-4528-aa9f-59ba28e91d8f")
+	)
+	(junction
+		(at 144.78 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10f10878-7ebb-4e2c-af0f-e39d0d328a9c")
+	)
+	(wire
+		(pts
+			(xy 139.7 41.91) (xy 148.59 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "588828d6-9f8a-4b19-bf4b-018e0e1a4010")
+	)
+	(wire
+		(pts
+			(xy 146.05 20.32) (xy 146.05 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ba758e-c1f3-401d-8f61-0643afd0e407")
+	)
+	(wire
+		(pts
+			(xy 146.05 31.75) (xy 148.59 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36a8fc80-8f66-41d7-8874-dd7a3731026f")
+	)
+	(wire
+		(pts
+			(xy 146.05 20.32) (xy 134.62 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42b3c6f6-81ef-4166-99c2-25864a6cdfcc")
+	)
+	(wire
+		(pts
+			(xy 134.62 20.32) (xy 134.62 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae398e6b-3ad1-47cb-ad86-17447cdff4b3")
+	)
+	(wire
+		(pts
+			(xy 134.62 39.37) (xy 148.59 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ff6581c-1dab-4ffb-af09-c96c5dec5dae")
+	)
+	(wire
+		(pts
+			(xy 146.05 25.4) (xy 144.78 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97a83f26-a967-4adf-873a-fafc13516d56")
+	)
+	(wire
+		(pts
+			(xy 144.78 30.48) (xy 144.78 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29a8727-e0bd-4d75-b0ee-327485de7851")
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 144.78 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d0a3bba-9752-45fc-b842-93792609352e")
+		(property "Reference" "R_TPS_U_0"
+			(at 142.24 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22k"
+			(at 142.24 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 144.78 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 144.78 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aaefbeb4-dbf1-423b-a27d-967f6df37317")
+		)
+		(pin "2"
+			(uuid "629c0129-1dad-4f07-897a-23af352fd7fc")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/dfdc99bd-6797-4c58-8fa3-5fd2e2701b4c"
+					(reference "R_TPS_U_0")
 					(unit 1)
 				)
 			)

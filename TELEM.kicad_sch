@@ -2218,7 +2218,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1 mΩ"
+		(property "Value" "10 mΩ"
 			(at 96.52 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2509,6 +2509,190 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3.3 V"
+		(shape input)
+		(at 85.09 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b3ae0c1d-29b7-4d0a-b67a-1e0bab27b34a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.1552 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 85.09 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "500140d7-7986-416a-819e-9a6a91e99c42")
+		(property "Reference" "C12"
+			(at 87.63 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 87.63 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f8b0588-3562-415c-bcf3-9880d5e62210")
+		)
+		(pin "2"
+			(uuid "c339ab25-945d-40ee-9435-9667b4374af5")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a8d3788-006a-42d4-8c1a-0e500fa689ba")
+		(property "Reference" "#PWR090"
+			(at 85.09 79.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7164ff8f-4187-4e6d-9438-703b466ebcc9")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/5aacdb22-1c13-4dbb-a723-da6d6af85e48"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
