@@ -2810,218 +2810,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "switch:EG1218"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 7.62 15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "EG1218"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "SW_1218_EWI"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "EG1218"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "EG1218"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SW_1218_EWI"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "EG1218_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.3251 7.3251) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.3251 7.3251)
-					(radius 0.635)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 8.255 0)
-					(radius 0.635)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "usbc_horizontal:USB4105-GF-A"
 			(pin_names
 				(offset 0.254)
@@ -3426,6 +3214,12 @@
 		(uuid "2d001b9a-d286-4071-acd9-6fe4fb9d9fc4")
 	)
 	(junction
+		(at 227.33 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3527d054-ab59-42db-bc43-41368024e1c0")
+	)
+	(junction
 		(at 187.96 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3480,6 +3274,12 @@
 		(uuid "ccc166da-9a54-4f52-a715-1a1ea21d299c")
 	)
 	(junction
+		(at 237.49 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d22d3a51-a1a9-4aab-86b1-3754b9063236")
+	)
+	(junction
 		(at 161.29 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3524,10 +3324,6 @@
 	(no_connect
 		(at 163.83 86.36)
 		(uuid "2116fc86-99c5-43cb-abf2-d6e4405b5a66")
-	)
-	(no_connect
-		(at 208.28 38.1)
-		(uuid "2c6585ae-86f1-4717-94c8-27f7c3db209d")
 	)
 	(no_connect
 		(at 163.83 78.74)
@@ -3839,6 +3635,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 45.72) (xy 237.49 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335068d3-b08c-44c5-9d22-42b0467370e5")
+	)
+	(wire
+		(pts
 			(xy 181.61 125.73) (xy 185.42 125.73)
 		)
 		(stroke
@@ -3946,6 +3752,16 @@
 			(type default)
 		)
 		(uuid "4db7b59c-8331-43ff-9362-afccc86df10d")
+	)
+	(wire
+		(pts
+			(xy 257.81 45.72) (xy 256.54 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d5e8a7-ffba-41bb-9eee-01af2ca2893a")
 	)
 	(wire
 		(pts
@@ -4169,7 +3985,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 45.72) (xy 210.82 45.72)
+			(xy 203.2 45.72) (xy 227.33 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4239,16 +4055,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 39.37) (xy 220.98 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b96a3ee3-9ada-42d8-b014-9f63b8724171")
-	)
-	(wire
-		(pts
 			(xy 187.96 142.24) (xy 135.89 142.24)
 		)
 		(stroke
@@ -4309,6 +4115,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 53.34) (xy 227.33 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c727b58d-6cdb-452a-999d-0bb8dfecf098")
+	)
+	(wire
+		(pts
 			(xy 87.63 44.45) (xy 87.63 48.26)
 		)
 		(stroke
@@ -4316,6 +4132,16 @@
 			(type default)
 		)
 		(uuid "c869620d-c6a6-4b50-a7b0-e03f7dfd65a0")
+	)
+	(wire
+		(pts
+			(xy 227.33 53.34) (xy 227.33 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0e469b0-78dd-44dc-a666-416623f35d4c")
 	)
 	(wire
 		(pts
@@ -4386,6 +4212,16 @@
 			(type default)
 		)
 		(uuid "ed2239f0-c765-485b-a443-6a443055d18b")
+	)
+	(wire
+		(pts
+			(xy 237.49 45.72) (xy 227.33 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed2261ee-e934-4677-9c39-25f425304e00")
 	)
 	(wire
 		(pts
@@ -4490,30 +4326,6 @@
 		(uuid "02f80efd-9926-4640-8c0e-de2492ab6d28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 174.4352 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "3.3 V"
-		(shape input)
-		(at 220.98 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "37efd8e8-113b-4998-94c4-174abbf0b8c2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.0452 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4666,6 +4478,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "3.3 V"
+		(shape input)
+		(at 229.87 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b443cd4a-5ae7-4b96-85c3-2f2866157f97")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.9352 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4846,6 +4682,84 @@
 			(justify left)
 		)
 		(uuid "f96a18bd-23d2-48aa-8050-4cad0c953753")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 237.49 40.64 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "029e9d69-3ec3-406e-981e-f5f1b65f7eef")
+		(property "Reference" "#PWR041"
+			(at 237.49 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.49 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86ba6a36-6729-4762-b47c-206eccfd76ea")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Power_Protection:TPD1E05U06DPY")
@@ -5165,8 +5079,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 220.98 44.45 0)
+		(lib_id "Device:R_Small_US")
+		(at 227.33 48.26 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5175,31 +5089,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "271fbbb4-825b-4038-b70a-876346cdb5f1")
-		(property "Reference" "#PWR014"
-			(at 220.98 50.8 0)
-			(hide yes)
+		(uuid "27277056-bc25-4304-9bd3-819c2837efe0")
+		(property "Reference" "R_PU_SWITCH3"
+			(at 229.87 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "GND"
-			(at 223.52 45.7199 0)
+		(property "Value" "10kΩ"
+			(at 229.87 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 220.98 44.45 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 227.33 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5210,7 +5124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 44.45 0)
+			(at 227.33 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5220,8 +5134,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 44.45 0)
+		(property "Description" "Resistor, small US symbol"
+			(at 227.33 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5230,14 +5144,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "812cbc8f-1741-4da1-806f-9ab26ed9d24f")
 		)
 		(pin "1"
-			(uuid "d21b30b4-25aa-42eb-8aa5-659b0563f71f")
+			(uuid "ca8d15fc-859b-4682-b8e5-43442256ceba")
 		)
 		(instances
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "#PWR014")
+					(reference "R_PU_SWITCH3")
 					(unit 1)
 				)
 			)
@@ -5398,6 +5315,84 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 257.81 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ba7af4e-d7fa-4b2a-a900-3cf546604651")
+		(property "Reference" "#PWR046"
+			(at 257.81 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 257.81 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 257.81 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f97ef758-78de-4407-ab19-f8491289db8f")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5996,88 +5991,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "R_USBC_DIV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 220.98 41.91 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64cab3e1-aec6-4493-bc5f-5665b47f1c2b")
-		(property "Reference" "C_D_SWITCH1"
-			(at 223.52 40.6335 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 223.52 43.1735 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 220.98 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 220.98 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "69fd7c7f-1cd7-4578-bd78-edd8873f358d")
-		)
-		(pin "2"
-			(uuid "971eba7a-d100-444a-8084-ab6e3d55bbfd")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "C_D_SWITCH1")
 					(unit 1)
 				)
 			)
@@ -6913,91 +6826,6 @@
 		)
 	)
 	(symbol
-		(lib_id "switch:EG1218")
-		(at 220.98 38.1 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "955ad20a-27ab-4100-8eb9-6ff4e3d4b318")
-		(property "Reference" "SW2"
-			(at 214.63 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "EG1218"
-			(at 214.63 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CustomFootprints:EG_1218_EWI"
-			(at 220.98 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "EG1218"
-			(at 220.98 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "bbc592ad-e9e4-48bd-9d67-1693b9624793")
-		)
-		(pin "2"
-			(uuid "ff43d336-746d-4783-b212-49e9ec5c5943")
-		)
-		(pin "1"
-			(uuid "4e89dc2c-8219-4866-8681-48a7e3c81584")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 63.5 46.99 0)
 		(unit 1)
@@ -7648,6 +7476,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 237.49 43.18 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3e3576e-5a9a-4901-a6ca-aec19d3938c9")
+		(property "Reference" "C_D_SWITCH3"
+			(at 234.95 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 234.95 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 237.49 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 237.49 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf9055e8-f08b-48eb-9f51-60a855f1fa0d")
+		)
+		(pin "2"
+			(uuid "7e04f07d-e670-4ae9-ae16-5006ea1e869b")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "C_D_SWITCH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 121.92 125.73 180)
 		(unit 1)
@@ -7804,6 +7712,86 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 251.46 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcc283c3-4805-4056-a57f-93094354d447")
+		(property "Reference" "SW3"
+			(at 251.46 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 251.46 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+			(at 251.46 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 251.46 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b942eb36-d858-4e5f-977c-43490e5146df")
+		)
+		(pin "2"
+			(uuid "6eaa99ba-bc87-4973-976a-143564ceb63b")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "SW3")
 					(unit 1)
 				)
 			)

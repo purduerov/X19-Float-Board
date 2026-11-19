@@ -889,7 +889,7 @@
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SW3,R_PU_SWITCH3,C_D_SWITCH3,#PWR41,#PWR46",
     "variants": []
   },
   "sheets": [
