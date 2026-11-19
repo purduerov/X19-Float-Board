@@ -478,12 +478,6 @@
 		(uuid "970783a9-1b5c-4688-b0a4-380e53818db1")
 	)
 	(junction
-		(at 160.02 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97a48c58-6aeb-4a0a-aaea-dcab09f8f4ce")
-	)
-	(junction
 		(at 90.17 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
