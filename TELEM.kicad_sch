@@ -1341,16 +1341,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 71.12) (xy 34.29 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "461043fd-2edf-4266-a6e2-b62870185261")
-	)
-	(wire
-		(pts
 			(xy 86.36 33.02) (xy 76.2 33.02)
 		)
 		(stroke
@@ -1619,7 +1609,7 @@
 	)
 	(hierarchical_label "TMP_ALERT"
 		(shape output)
-		(at 33.02 71.12 180)
+		(at 34.29 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
