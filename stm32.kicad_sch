@@ -3340,6 +3340,14 @@
 		(uuid "7001bdad-25a2-44c5-9dde-9b4291a1a8b3")
 	)
 	(no_connect
+		(at 163.83 43.18)
+		(uuid "84c0936e-b2d3-4885-8cce-cc707825f148")
+	)
+	(no_connect
+		(at 163.83 76.2)
+		(uuid "84ebb2d2-da1b-4149-a9ab-8b62d14d8c9b")
+	)
+	(no_connect
 		(at 92.71 78.74)
 		(uuid "905bf845-d782-430a-8064-d594c703db8e")
 	)
@@ -3360,6 +3368,10 @@
 		(uuid "b4dadfe5-c401-4f18-9459-34d89bde3e42")
 	)
 	(no_connect
+		(at 163.83 40.64)
+		(uuid "be2a3340-d307-45aa-8089-d2765cd64654")
+	)
+	(no_connect
 		(at 92.71 40.64)
 		(uuid "c158474f-8c78-469d-98a5-f1f906fa53ad")
 	)
@@ -3370,6 +3382,10 @@
 	(no_connect
 		(at 163.83 83.82)
 		(uuid "e636682c-d8f8-4935-8b29-e79b57e3d1b5")
+	)
+	(no_connect
+		(at 163.83 73.66)
+		(uuid "fd2426a0-8d13-4135-b65b-dc3a11130004")
 	)
 	(wire
 		(pts
@@ -4331,6 +4347,30 @@
 	)
 	(global_label "3.3 V"
 		(shape input)
+		(at 257.81 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a105a24-0af5-4444-980d-e97ba437e416")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.8752 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "3.3 V"
+		(shape input)
 		(at 92.71 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4350,6 +4390,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "3.3 V"
+		(shape input)
+		(at 237.49 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64b5bee9-9426-4e9d-acd9-7116604289d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.5552 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4446,30 +4510,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "3.3 V"
-		(shape input)
-		(at 229.87 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b443cd4a-5ae7-4b96-85c3-2f2866157f97")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.9352 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -4650,84 +4690,6 @@
 			(justify right)
 		)
 		(uuid "f901b33d-2558-471f-b39e-2b78acb8d1f3")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 237.49 40.64 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "029e9d69-3ec3-406e-981e-f5f1b65f7eef")
-		(property "Reference" "#PWR041"
-			(at 237.49 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 237.49 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "86ba6a36-6729-4762-b47c-206eccfd76ea")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Power_Protection:TPD1E05U06DPY")
@@ -5283,84 +5245,6 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 257.81 45.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ba7af4e-d7fa-4b2a-a900-3cf546604651")
-		(property "Reference" "#PWR046"
-			(at 257.81 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 257.81 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f97ef758-78de-4407-ab19-f8491289db8f")
-		)
-		(instances
-			(project "X19-Float-Board"
-				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
-					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7197,6 +7081,84 @@
 			(project "X19-Float-Board"
 				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
 					(reference "R_USBC_DIV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c90e6076-f3e4-457f-8782-9668337e2699")
+		(property "Reference" "#PWR046"
+			(at 229.87 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2e6474e-4f18-464f-9b5b-52593de06981")
+		)
+		(instances
+			(project "X19-Float-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b/b8b01d55-3cf7-40b0-9951-5ecee40f8aa9"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)

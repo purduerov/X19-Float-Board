@@ -1692,10 +1692,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c2d6d7e7-8c08-4ac8-830e-520192ee6cba")
 		(property "Reference" "C11"
-			(at 33.02 88.9062 0)
+			(at 58.928 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1706,7 +1705,7 @@
 			)
 		)
 		(property "Value" "10nf"
-			(at 33.02 91.4462 0)
+			(at 58.674 100.0822 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

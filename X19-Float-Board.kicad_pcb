@@ -4047,7 +4047,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U2-PA8-Pad29)")
 			(pinfunction "PA8_29")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "d5a26be7-0a5d-4ab9-8833-56f3a7efc8d0")
 		)
 		(pad "30" smd rect
@@ -4056,7 +4056,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U2-PA9-Pad30)")
 			(pinfunction "PA9_30")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "51c2b39d-35ed-4fe3-9926-261c7e5cb755")
 		)
 		(pad "31" smd rect
@@ -4164,7 +4164,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U2-PB6-Pad42)")
 			(pinfunction "PB6_42")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "27b072ba-8d01-4220-9fd7-264b378362fe")
 		)
 		(pad "43" smd rect
@@ -4173,7 +4173,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U2-PB7-Pad43)")
 			(pinfunction "PB7_43")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "9373e09f-6f84-446a-99fc-52f315f30b8c")
 		)
 		(pad "44" smd rect
@@ -15436,163 +15436,6 @@
 			(net "GND")
 			(pintype "passive")
 			(uuid "6aa104b7-db55-4c50-a2f7-e2c96e50dfc8")
-		)
-		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
-		(layer "F.Cu")
-		(uuid "d827ef72-04b1-4939-a3d7-dd4b07f3d151")
-		(at 141.745 92.015)
-		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
-		(tags "capacitor")
-		(property "Reference" "C_D_SWITCH1"
-			(at 0 -1.43 0)
-			(layer "F.SilkS")
-			(uuid "7f7261a4-d087-4cff-bc6e-b35c1f7d715c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 0 1.43 0)
-			(layer "F.Fab")
-			(uuid "3d325dac-debb-4d84-971a-a2eeea6a6c9c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f98798c5-26fe-429f-aaa2-7034055b43b3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "112702eb-32f0-46c2-8776-5c7bc9f7c521")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "64f4804d-f759-4a42-8701-ea73810d5d88")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(sheetname "/stm32/")
-		(sheetfile "stm32.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "34c51234-bf0d-4361-ad3d-f05099c90020")
-		)
-		(fp_line
-			(start -0.14058 0.51)
-			(end 0.14058 0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "766c1c77-12ef-4bc6-8bf6-1a68677356ca")
-		)
-		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "1ef773ad-9824-40ed-ad4e-3b3ea6becc6b")
-		)
-		(fp_rect
-			(start -0.8 -0.4)
-			(end 0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "8bc6111d-9f82-47da-9e5f-f993acb55e28")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "42ed39a1-efe1-4257-b36c-5d5b7de9ccd2")
-			(effects
-				(font
-					(size 0.4 0.4)
-					(thickness 0.06)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.775 0)
-			(size 0.9 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "GND")
-			(pintype "passive")
-			(uuid "26c00905-60c2-4ad0-9891-a99008ae3685")
-		)
-		(pad "2" smd roundrect
-			(at 0.775 0)
-			(size 0.9 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "3.3 V")
-			(pintype "passive")
-			(uuid "9521e5af-3f19-47cb-8e31-3fbec7f12ede")
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
